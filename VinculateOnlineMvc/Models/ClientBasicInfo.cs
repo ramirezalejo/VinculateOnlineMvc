@@ -15,10 +15,10 @@ namespace VinculateOnlineMvc.Models
         public string FirstLastName { get; set; }
         public string SecondLastName { get; set; }
         public DateTime BirthDate { get; set; }
-        public string NameCountryBirthDate { get; set; }
-        public string NameCityBirthDate { get; set; }
-        public string Gender { get; set; }
-   
-        
+        public int CountryBirthDate { get; set; }
+        public int CityBirthDate { get; set; }
+        public int Gender { get; set; }
+        public int MaritalStatus { get; set; }
+
     }
 }
