@@ -149,5 +149,16 @@ namespace VinculateOnlineMvc.Controllers
         {
             return _context.DataInfo.Any(e => e.ClientID == id);
         }
+
+
+        // GET: DataInfo/Document
+        public IActionResult Document()
+        {
+            return View();
+        }
+
+
     }
+
+
 }
