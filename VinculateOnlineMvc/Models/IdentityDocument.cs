@@ -10,6 +10,7 @@ namespace VinculateOnlineMvc.Models
     public class IdentityDocument
     {
         [Key]
+        
         public int IdenDocNumberID { get; set; }
         public int DocNumber { get; set; }
         public int DocType { get; set; }

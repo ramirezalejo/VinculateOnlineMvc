@@ -5,42 +5,69 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div id="header">
+    <div class="extramargin">
+        <a href="https://www.procredit.com.co" target="_blank">
+            <img src="/Content/images/ProCreditLogo.jpg" title="Colombia">
+        </a>
+        <span class="l-floatright">
+            <img src="/Content/images/rightlogo.jpg">
+        </span>
+    </div>
+    <div class="loginwrapper">
+
+        <span class="l-floatright">
+
+        </span>
+    </div>
+    <div>
+        <span class="colorbarpart" style="background-color: #FFDD00;"></span>
+        <span class="colorbarpart" style="background-color: #F37021;"></span>
+        <span class="colorbarpart" style="background-color: #DA2128;"></span>
+        <span class="colorbarpart" style="background-color: #009175;"></span>
+        <span class="colorbarpart" style="background-color: #A52960;"></span>
+        <span class="colorbarpart" style="background-color: #0066B3;"></span>
+    </div>
+</div>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Document">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="floating-placeholder">
-                <label asp-for="DocNumber" class="control-label">Digita tu Documento</label>
+                <label asp-for="DocNumber" class="control-label"> Digita tu Documento</label>
                 <input asp-for="DocNumber" class="form-control" />
                 <span asp-validation-for="DocNumber" class="text-danger"></span>
+
             </div>
             <div class="floating-placeholder">
-                <label asp-for="DocType" class="control-label">Tipo de Documento</label>
                 <input asp-for="DocType" class="form-control" />
+                <label asp-for="DocType" class="control-label">Tipo de Documento</label>
                 <span asp-validation-for="DocType" class="text-danger"></span>
             </div>
             <div class="floating-placeholder">
-                <label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label>
                 <input asp-for="FileDocNumber" class="form-control" />
+                <label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label>
                 <span asp-validation-for="FileDocNumber" class="text-danger"></span>
             </div>
+
             @*<div class="floating-placeholder">
-                <label asp-for="ExpDate" class="control-label"></label>
-                <input asp-for="ExpDate" class="form-control" />
-                <span asp-validation-for="ExpDate" class="text-danger"></span>
-            </div>
-            <div class="floating-placeholder">
-                <label asp-for="NameCityDocumentExp" class="control-label"></label>
-                <input asp-for="NameCityDocumentExp" class="form-control" />
-                <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
-            </div>*@
+                    <label asp-for="ExpDate" class="control-label"></label>
+                    <input asp-for="ExpDate" class="form-control" />
+                    <span asp-validation-for="ExpDate" class="text-danger"></span>
+                </div>
+                <div class="floating-placeholder">
+                    <label asp-for="NameCityDocumentExp" class="control-label"></label>
+                    <input asp-for="NameCityDocumentExp" class="form-control" />
+                    <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
+                </div>*@
 
             <div class="form-group">
-                <input type="submit" value="Siguiente" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home")'"/>
+                <input type="submit" value="Siguiente" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home")'" />
             </div>
 
-       
+
 
         </form>
     </div>
