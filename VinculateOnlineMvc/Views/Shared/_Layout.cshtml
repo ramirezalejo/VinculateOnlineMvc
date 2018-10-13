@@ -5,7 +5,7 @@
 </head>
 <body>
 
-      <div class="container body-content">
+    <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
@@ -33,3 +33,7 @@
 
 </body>
 </html>
+@if (IsSectionDefined("scripts"))
+{
+    RenderSection("scripts");
+}

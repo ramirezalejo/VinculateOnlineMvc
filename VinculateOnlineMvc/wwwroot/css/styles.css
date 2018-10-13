@@ -1,0 +1,1164 @@
+@charset "UTF-8";
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 28.07.2014
+## Edited by: Sebastian Mohila
+## Description: Main style sheet
+##
+## (C) 2000 - 2014 formativ.net oHG / <Vorname Nachname>
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 05.08.2013
+## Edited by: Sebastian Mohila
+## Description: Global style sheet
+##
+## (C) 2000 - 2013 formativ.net oHG / Vivian Muschter
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+/* colors */
+/* fonts */
+/* dimensions */
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 05.08.2013
+## Edited by: Sebastian Mohila
+## Description: Font style sheet
+##
+## (C) 2000 - 2013 formativ.net oHG / <Vorname Nachname>
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+@font-face {
+  font-family: 'MetaProBook';
+  src: url("../fonts/MetaWebPro-Book.eot");
+  src: url("../fonts/MetaWebPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaWebPro-Book.woff") format("woff"), url("../fonts/MetaWebPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MetaProBold';
+  src: url("../fonts/MetaWebPro-Bold.eot");
+  src: url("../fonts/MetaWebPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaWebPro-Bold.woff") format("woff"), url("../fonts/MetaWebPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MetaWeb-Bold';
+  src: url("../fonts/MetaWeb-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'MetaScWeb-Book';
+  src: url("../fonts/MetaScWeb-Book.woff") format("woff"); }
+/**** OVERRIDES BEGIN ***/
+html {
+  height: 100%; }
+
+html, body {
+  min-height: 100% !important; }
+
+body {
+  position: relative; }
+
+.menu,
+.nav li,
+.nav li a,
+.nav ul,
+ul.breadcrumb,
+ul.breadcrumb li,
+.nav ul li,
+.nav ul li a,
+.cLanguage ul,
+.cLanguage ul li,
+.cLanguage ul li a {
+  list-style: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-image: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**** OVERRIDES END ***/
+/**** MAIN ELEMENTS BEGIN ***/
+.cPageWrap {
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden; }
+
+.cContainer {
+  max-width: 980px;
+  width: 100%;
+  margin: auto; }
+
+.cMetaNav {
+  background: #A6A6A6;
+  padding: 8px 0; }
+  .cMetaNav ul {
+    text-align: right; }
+    .cMetaNav ul li {
+      display: inline;
+      line-height: 90%;
+      font-size: 10px;
+      font-size: 0.625rem;
+      border-left: 1px solid #fff;
+      margin-right: 15px;
+      padding-left: 15px; }
+      .cMetaNav ul li:first-child {
+        border-left: none; }
+      .cMetaNav ul li a {
+        color: #fff;
+        text-transform: uppercase; }
+        .cMetaNav ul li a:hover {
+          color: #D40E14; }
+
+header {
+  width: 100%;
+  height: 152px;
+  background: #EDEEF0 url("../images/header-bg.jpg") center bottom no-repeat; }
+  header .cContainer {
+    position: relative; }
+
+.cMainNavigation {
+  height: 41px;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f9+0,f8f8f9+4,efeff0+4,f4f5f6+5,f5f5f6+5,f2f2f4+5,f5f5f6+6,f6f6f7+6,f7f7f8+6,f4f5f6+6,f7f7f8+7,f8f8f9+9,f8f8f9+88,f7f7f8+90,f4f5f6+91,f7f7f8+91,f6f6f7+91,f4f4f5+92,eeeef0+93,f8f8f9+93,f8f8f9+96,ffffff+96,ffffff+100&0+0,0+3,0.02+4,0.06+4,0.17+5,0.34+6,0.41+6,0.46+6,0.62+7,0.65+7,0.7+8,0.88+9,0.95+10,1+13,1+86,0.98+87,0.94+87,0.91+88,0.91+88,0.87+88,0.86+88,0.8+89,0.81+89,0.77+89,0.74+89,0.74+89,0.63+90,0.58+90,0.46+91,0.43+91,0.2+92,0.09+93,0.04+93,0+94,0+100 */
+  background: -moz-linear-gradient(left, rgba(248, 248, 249, 0) 0%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.02) 4%, rgba(242, 242, 244, 0.17) 5%, rgba(244, 245, 246, 0.46) 6%, rgba(247, 247, 248, 0.62) 7%, rgba(248, 248, 249, 0.7) 8%, rgba(248, 248, 249, 0.88) 9%, rgba(248, 248, 249, 0.95) 10%, #f8f8f9 13%, #f8f8f9 86%, rgba(248, 248, 249, 0.94) 87%, rgba(248, 248, 249, 0.91) 88%, rgba(248, 248, 249, 0.74) 89%, rgba(247, 247, 248, 0.63) 90%, rgba(247, 247, 248, 0.43) 91%, rgba(244, 244, 245, 0.2) 92%, rgba(248, 248, 249, 0.09) 93%, rgba(248, 248, 249, 0) 94%, rgba(248, 248, 249, 0) 96%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(248, 248, 249, 0) 0%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.02) 4%, rgba(242, 242, 244, 0.17) 5%, rgba(244, 245, 246, 0.46) 6%, rgba(247, 247, 248, 0.62) 7%, rgba(248, 248, 249, 0.7) 8%, rgba(248, 248, 249, 0.88) 9%, rgba(248, 248, 249, 0.95) 10%, #f8f8f9 13%, #f8f8f9 86%, rgba(248, 248, 249, 0.94) 87%, rgba(248, 248, 249, 0.91) 88%, rgba(248, 248, 249, 0.74) 89%, rgba(247, 247, 248, 0.63) 90%, rgba(247, 247, 248, 0.43) 91%, rgba(244, 244, 245, 0.2) 92%, rgba(248, 248, 249, 0.09) 93%, rgba(248, 248, 249, 0) 94%, rgba(248, 248, 249, 0) 96%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(248, 248, 249, 0) 0%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.02) 4%, rgba(242, 242, 244, 0.17) 5%, rgba(244, 245, 246, 0.46) 6%, rgba(247, 247, 248, 0.62) 7%, rgba(248, 248, 249, 0.7) 8%, rgba(248, 248, 249, 0.88) 9%, rgba(248, 248, 249, 0.95) 10%, #f8f8f9 13%, #f8f8f9 86%, rgba(248, 248, 249, 0.94) 87%, rgba(248, 248, 249, 0.91) 88%, rgba(248, 248, 249, 0.74) 89%, rgba(247, 247, 248, 0.63) 90%, rgba(247, 247, 248, 0.43) 91%, rgba(244, 244, 245, 0.2) 92%, rgba(248, 248, 249, 0.09) 93%, rgba(248, 248, 249, 0) 94%, rgba(248, 248, 249, 0) 96%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f9', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 */ }
+  .cMainNavigation:after {
+    position: absolute;
+    width: 91%;
+    height: 4px;
+    content: '\00a0';
+    right: 6%;
+    bottom: 1px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+2,f8f8f9+2,f8f8f9+5,f4f5f6+5,f8f8f9+7,f6f6f7+7,f7f7f8+8,edeeef+13,eaebec+15,eaebec+100&0+0,0+3,0.06+4,0.14+5,0.25+5,0.54+7,0.69+8,0.69+8,0.74+8,0.87+9,0.92+10,0.96+10,1+13,0.99+90,0.96+91,0.92+92,0.89+92,0.89+92,0.8+93,0.54+95,0.25+97,0.12+97,0.02+99,0+100 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(248, 248, 249, 0) 2%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.06) 4%, rgba(248, 248, 249, 0.25) 5%, rgba(246, 246, 247, 0.54) 7%, rgba(247, 247, 248, 0.74) 8%, rgba(245, 245, 246, 0.87) 9%, rgba(243, 243, 244, 0.96) 10%, #edeeef 13%, #eaebec 15%, rgba(234, 235, 236, 0.99) 90%, rgba(234, 235, 236, 0.96) 91%, rgba(234, 235, 236, 0.89) 92%, rgba(234, 235, 236, 0.8) 93%, rgba(234, 235, 236, 0.54) 95%, rgba(234, 235, 236, 0.12) 97%, rgba(234, 235, 236, 0.02) 99%, rgba(234, 235, 236, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(248, 248, 249, 0) 2%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.06) 4%, rgba(248, 248, 249, 0.25) 5%, rgba(246, 246, 247, 0.54) 7%, rgba(247, 247, 248, 0.74) 8%, rgba(245, 245, 246, 0.87) 9%, rgba(243, 243, 244, 0.96) 10%, #edeeef 13%, #eaebec 15%, rgba(234, 235, 236, 0.99) 90%, rgba(234, 235, 236, 0.96) 91%, rgba(234, 235, 236, 0.89) 92%, rgba(234, 235, 236, 0.8) 93%, rgba(234, 235, 236, 0.54) 95%, rgba(234, 235, 236, 0.12) 97%, rgba(234, 235, 236, 0.02) 99%, rgba(234, 235, 236, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(248, 248, 249, 0) 2%, rgba(248, 248, 249, 0) 3%, rgba(248, 248, 249, 0.06) 4%, rgba(248, 248, 249, 0.25) 5%, rgba(246, 246, 247, 0.54) 7%, rgba(247, 247, 248, 0.74) 8%, rgba(245, 245, 246, 0.87) 9%, rgba(243, 243, 244, 0.96) 10%, #edeeef 13%, #eaebec 15%, rgba(234, 235, 236, 0.99) 90%, rgba(234, 235, 236, 0.96) 91%, rgba(234, 235, 236, 0.89) 92%, rgba(234, 235, 236, 0.8) 93%, rgba(234, 235, 236, 0.54) 95%, rgba(234, 235, 236, 0.12) 97%, rgba(234, 235, 236, 0.02) 99%, rgba(234, 235, 236, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00eaebec',GradientType=1 );
+    /* IE6-9 */ }
+  .cMainNavigation ul.nav {
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    height: 36px;
+    height: 2.25rem; }
+    .cMainNavigation ul.nav li {
+      float: left;
+      background: url("../images/menu-li.png") left center no-repeat;
+      position: relative;
+      padding-bottom: 1px;
+      width: 20%;
+      text-align: center; }
+      .cMainNavigation ul.nav li a {
+        color: #3a4049;
+        display: block;
+        line-height: 36px;
+        line-height: 2.25rem;
+        padding: 0 17px;
+        font-family: MetaProBook;
+        font-size: 18px; }
+      .cMainNavigation ul.nav li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        background: #fff;
+        border-bottom: 4px solid #d10c15;
+        border-top: 4px solid #eaebec;
+        padding: 4px 0 20px 0;
+        width: 290px;
+        z-index: 500; }
+        .cMainNavigation ul.nav li ul li {
+          position: static;
+          background: none;
+          width: 100%;
+          padding: 0; }
+          .cMainNavigation ul.nav li ul li a {
+            font-size: 11px;
+            font-weight: bold;
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            background: url("../images/arrow.png") left 11px no-repeat;
+            margin-left: 10px;
+            text-align: left;
+            line-height: 12.5px;
+            display: block;
+            padding: 12.5px 5px 12.5px 20px;
+            color: #3a4049;
+            text-transform: uppercase; }
+          .cMainNavigation ul.nav li ul li ul {
+            display: none;
+            left: 0;
+            padding-left: 100%;
+            padding-top: 9px;
+            width: 580px;
+            top: 0;
+            border-top: 8px solid #fff;
+            min-height: 110%;
+            min-height: calc(100% + 4px);
+            z-index: -1;
+            border-right: 1px solid #eaebec;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+            .cMainNavigation ul.nav li ul li ul li a {
+              background: url("../images/bullet-breadc.png") left 3px no-repeat;
+              display: block;
+              font-size: 12px;
+              font-weight: normal;
+              line-height: 12.5px;
+              margin: 0 0 25px 20px;
+              padding: 0 5px 0 10px;
+              text-transform: none; }
+            .cMainNavigation ul.nav li ul li ul li ul {
+              display: none !important; }
+            .cMainNavigation ul.nav li ul li ul li:hover > a, .cMainNavigation ul.nav li ul li ul li.active > a {
+              background: url("../images/bullet-breadc-hover.png") left 3px no-repeat;
+              color: #d10c15; }
+        .cMainNavigation ul.nav li ul li.active > a, .cMainNavigation ul.nav li ul li:hover > a {
+          background: url("../images/arrow-hover.png") left 11px no-repeat;
+          color: #D40E14; }
+        .cMainNavigation ul.nav li ul li:hover > ul {
+          display: block; }
+    .cMainNavigation ul.nav li:first-child {
+      background: none; }
+    .cMainNavigation ul.nav li:hover > a, .cMainNavigation ul.nav li.active > a {
+      color: #D40E14; }
+    .cMainNavigation ul.nav li:hover > ul {
+      display: block; }
+    .cMainNavigation ul.nav li.item-429, .cMainNavigation ul.nav li.item-267 {
+      width: 15%;
+      position: relative; }
+      .cMainNavigation ul.nav li.item-429:after, .cMainNavigation ul.nav li.item-267:after {
+        content: "";
+        background: url("../images/leaf.png") center center no-repeat;
+        height: 32px;
+        width: 37px;
+        display: block;
+        position: absolute;
+        left: 72%;
+        top: 0px;
+        z-index: 500; }
+    .cMainNavigation ul.nav li.item-412, .cMainNavigation ul.nav li.item-438, .cMainNavigation ul.nav li.item-266, .cMainNavigation ul.nav li.item-281 {
+      width: 22.5%; }
+    .cMainNavigation ul.nav li.item-429 ul li ul, .cMainNavigation ul.nav li.item-267 ul li ul, .cMainNavigation ul.nav li.item-281 ul li ul, .cMainNavigation ul.nav .li.item-438 ul li ul {
+      left: -100%;
+      padding-left: 0;
+      padding-right: 100%; }
+
+.cMainContent {
+  margin-bottom: 220px;
+  width: 100%;
+  padding-bottom: 50px; }
+  .cMainContent > div {
+    width: 100%; }
+
+.cMainContentModule {
+  width: 100%; }
+  .cMainContentModule .moduletable {
+    width: 100%;
+    margin-bottom: 10px; }
+    .cMainContentModule .moduletable.cThird {
+      width: 30%;
+      float: left; }
+    .cMainContentModule .moduletable h3 {
+      color: #3a4049;
+      padding: 5px;
+      background: #E7E7E7;
+      margin-top: 0; }
+    .cMainContentModule .moduletable.cBorder {
+      margin-left: 2.5%;
+      padding-left: 2.5%;
+      background: url("../images/listabg.png") left top no-repeat;
+      background-size: 2px 100%; }
+    .cMainContentModule .moduletable p {
+      margin-bottom: 5px; }
+
+.cMainColumn {
+  margin-top: 20px;
+  width: 76.5%;
+  padding-right: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../images/senka.png") 100% top no-repeat;
+  float: left; }
+
+.item-page {
+  margin-top: 20px; }
+
+.item-page.cPublicaciones .moduletable {
+  position: relative;
+  margin-bottom: 40px; }
+  .item-page.cPublicaciones .moduletable h3 {
+    width: 90%; }
+  .item-page.cPublicaciones .moduletable p.link-url {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    margin: 0; }
+    .item-page.cPublicaciones .moduletable p.link-url a {
+      text-decoration: underline; }
+      .item-page.cPublicaciones .moduletable p.link-url a:hover {
+        text-decoration: none; }
+
+aside {
+  margin-top: 20px;
+  width: 23.5%;
+  padding-left: 15px;
+  float: right;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  aside hr {
+    border: none;
+    border-bottom: 1px dashed #ccc;
+    height: 1; }
+  aside .moduletable {
+    border-top: 1px dashed #ccc;
+    padding: 10px 0; }
+    aside .moduletable .custom {
+      margin-bottom: -15px; }
+    aside .moduletable ul {
+      margin: 15px 0 15px 15px; }
+      aside .moduletable ul li {
+        background: none;
+        padding: 0;
+        line-height: 110%; }
+        aside .moduletable ul li a {
+          background: url("../images/bullet-breadc.png") left center no-repeat;
+          color: #3a4049;
+          display: block;
+          font-weight: bold;
+          padding-left: 10px;
+          text-decoration: none; }
+  aside .moduletable:first-child {
+    border-top: none;
+    padding-top: 0; }
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  background: #F4F4F4;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: -200px; }
+  footer .moduletable {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 980px; }
+
+/**** MAIN ELEMENTS END ***/
+/**** SPECIFIC ELEMENTS BEGIN ***/
+.cLogo {
+  position: absolute;
+  top: 25px;
+  left: 0; }
+
+.cLogoGroup {
+  position: absolute;
+  right: 0;
+  top: 80px; }
+
+.meta-menu {
+  position: absolute;
+  top: 9px;
+  left: 485px; }
+  .meta-menu li > a {
+    color: #535252; }
+
+div.mod-languages ul.lang-inline li {
+  display: block !important; }
+
+.cLanguage {
+  position: absolute;
+  right: 0;
+  top: 35px; }
+  .cLanguage ul li {
+    background: url("../images/menu-li.png") left center no-repeat;
+    margin-left: 5px;
+    padding-left: 10px;
+    display: block !important;
+    float: left;
+    height: 25px;
+    line-height: 25px; }
+    .cLanguage ul li a {
+      color: #3a4049;
+      text-transform: lowercase; }
+  .cLanguage ul li:hover a, .cLanguage ul li.lang-active a {
+    color: #d10c15; }
+  .cLanguage ul li:first-child {
+    background: none;
+    margin: 0;
+    padding: 0; }
+
+/* Search + Results */
+.cSearch {
+  position: absolute;
+  right: 55px;
+  top: 30px; }
+
+.cSearch input.inputbox, .search input.inputbox {
+  background: url("../images/inputbg.png") left top no-repeat;
+  border: none;
+  border-right: none;
+  height: 33px;
+  width: 172px;
+  display: block;
+  float: left;
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  padding-left: 10px;
+  margin-right: -10px; }
+.cSearch button.button, .cSearch button.btn, .search button.button, .search button.btn {
+  width: 60px;
+  height: 35px;
+  background: url("../images/inputbtn.png") center center no-repeat;
+  border: none;
+  cursor: pointer;
+  padding: 0; }
+
+.search #searchForm .btn-group {
+  float: left; }
+.search .searchintro {
+  clear: both;
+  margin: 40px 0 10px; }
+.search .result-title {
+  color: #D40E14;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px; }
+  .search .result-title a {
+    text-decoration: underline;
+    color: #D40E14; }
+.search .result-text {
+  margin-bottom: 15px;
+  color: #2d2d2d;
+  font-size: 11px;
+  line-height: 130%; }
+  .search .result-text .highlight {
+    font-weight: bold; }
+
+.pagination ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  height: 25px; }
+.pagination li {
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+  line-height: 12px;
+  border-left: 1px solid #5f5f5f; }
+  .pagination li:first-child {
+    border: none; }
+  .pagination li a, .pagination li span {
+    padding: 0 5px;
+    display: block;
+    color: #5f5f5f;
+    font-size: 12px;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    text-decoration: none; }
+  .pagination li a {
+    font-weight: bold; }
+
+ul.breadcrumb {
+  height: 30px;
+  border-bottom: 1px dashed #ccc; }
+  ul.breadcrumb li {
+    float: left; }
+  ul.breadcrumb a, ul.breadcrumb span {
+    background: url("../images/bullet-breadc.png") right center no-repeat;
+    color: #b6bcc4;
+    font-size: 10px;
+    font-weight: normal;
+    margin-right: 3px;
+    padding: 1px 10px 0 0;
+    text-decoration: none;
+    text-transform: uppercase; }
+  ul.breadcrumb span {
+    background: none;
+    margin-left: 2px; }
+  ul.breadcrumb span.divider {
+    display: none; }
+
+.cImageModule {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative; }
+  .cImageModule .cSlider.custom > p {
+    height: 0;
+    margin: 0; }
+  .cImageModule .nivo-caption {
+    padding: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    background: #d40e14;
+    background: rgba(212, 14, 20, 0.8);
+    width: 75%;
+    opacity: 1 !important; }
+    .cImageModule .nivo-caption p, .cImageModule .nivo-caption h2, .cImageModule .nivo-caption h3, .cImageModule .nivo-caption a {
+      color: #fff !important;
+      margin: 0 0 15px 0;
+      padding: 0; }
+    .cImageModule .nivo-caption h2, .cImageModule .nivo-caption h3 {
+      margin: 0;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 150%; }
+  .cImageModule .nivo-controlNav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    padding: 0; }
+    .cImageModule .nivo-controlNav a.nivo-control {
+      border: 1px solid #efefef;
+      width: 12px;
+      height: 12px;
+      display: block;
+      text-indent: -9999px;
+      float: left;
+      margin: 5px 0 0 5px; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="0"] {
+      background: #ec6601; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="1"] {
+      background: #d40e14; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="2"] {
+      background: #008559; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="3"] {
+      background: #b70e77; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="4"] {
+      background: #004f95; }
+    .cImageModule .nivo-controlNav a.nivo-control[rel~="5"] {
+      background: #FFD443; }
+    .cImageModule .nivo-controlNav a.active.nivo-control {
+      background: #fff; }
+
+.cTopContentNavModule {
+  /* level 1 display none! */
+  /* level 2 display as headline */ }
+  .cTopContentNavModule div.cHigherLevel > ul > li {
+    display: none; }
+  .cTopContentNavModule div.cHigherLevel > ul > li.active {
+    display: block; }
+    .cTopContentNavModule div.cHigherLevel > ul > li.active a {
+      display: none; }
+  .cTopContentNavModule div.cHigherLevel > ul > li > ul > li {
+    display: none; }
+  .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active {
+    display: block;
+    /* level 3 as grey buttons */ }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active > a {
+      color: #d40e14;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 20px 10px;
+      display: block; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul {
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 0px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+      .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li {
+        background: #b6bcc4;
+        padding: 0;
+        margin: 0 1px 1px 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        display: block !important;
+        float: left;
+        position: relative;
+        text-transform: uppercase; }
+        .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li:hover a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li a {
+          display: block !important;
+          color: #fff;
+          display: block;
+          font-size: 11px;
+          line-height: 120%;
+          padding: 10px 25px; }
+        .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li.active {
+          background: #d40e14 url("../images/nav-globe.png") left center no-repeat; }
+        .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li.active {
+          padding-left: 0; }
+          .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active ul li.active > a {
+            color: #fff; }
+  .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active {
+    /* orange */
+    /* green */
+    /* violet */
+    /* blue */ }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-208 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-217 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-225 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-236 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-123 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-145 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-46 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-147 > a {
+      color: #ec6601; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-208 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-208 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-217 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-217 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-225 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-225 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-236 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-236 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-123 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-123 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-145 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-145 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-46 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-46 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-147 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-147 ul > li:hover {
+      background: #ec6601 url("../images/nav-globe.png") left center no-repeat; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-122 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-268 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-219 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-336 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-337 > a {
+      color: #008559; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-122 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-122 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-268 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-268 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-219 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-219 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-336 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-336 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-337 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-337 ul > li:hover {
+      background: #008559 url("../images/nav-globe.png") left center no-repeat; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-276 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-280 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-193 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-197 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-350 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-351 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-352 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-353 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-354 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-355 > a {
+      color: #b70e77; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-276 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-276 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-280 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-280 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-193 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-193 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-197 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-197 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-350 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-350 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-351 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-351 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-352 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-352 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-353 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-353 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-354 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-354 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-355 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-355 ul > li:hover {
+      background: #b70e77 url("../images/nav-globe.png") left center no-repeat; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-198 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-199 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-200 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-201 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-202 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-282 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-287 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-288 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-289 > a, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-290 > a {
+      color: #004f95; }
+    .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-198 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-198 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-199 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-199 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-200 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-200 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-201 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-201 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-202 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-202 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-282 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-282 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-287 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-287 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-288 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-288 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-289 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-289 ul > li:hover, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-290 ul > li.active, .cTopContentNavModule div.cHigherLevel > ul > li > ul > li.active.item-290 ul > li:hover {
+      background: #004f95 url("../images/nav-globe.png") left center no-repeat; }
+
+.cMainContentNavModule {
+  /* Dynamisch erzeugtes Joomla-Menü, li der ersten Ebene muss einzelne Box bilden */ }
+  .cMainContentNavModule .moduletable {
+    width: 75%;
+    margin: 0 auto 30px;
+    height: 170px; }
+    .cMainContentNavModule .moduletable ul {
+      margin-left: 28px;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      min-height: 127px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #EBEBEB url("../images/color-box-bg.png") left top no-repeat; }
+      .cMainContentNavModule .moduletable ul li {
+        margin-left: 30px;
+        background: url("../images/red-bullet-smaller.png") left 2px no-repeat;
+        padding-left: 25px; }
+        .cMainContentNavModule .moduletable ul li a {
+          color: #3a4049;
+          text-decoration: none; }
+  .cMainContentNavModule .moduletable.cSubContentMenu {
+    background: none;
+    height: auto; }
+    .cMainContentNavModule .moduletable.cSubContentMenu ul.nav {
+      margin: 0;
+      background: none;
+      padding: 0;
+      /* gesonderte Einfärbung orange */
+      /* gesonderte Einfärbung green */
+      /* gesonderte Einfärbung violet */
+      /* gesonderte Einfärbung blue */ }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li {
+        margin: 0 0 30px 0;
+        padding: 0;
+        background: none;
+        position: relative; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li > .cItemButton {
+          background: url("../images/sub-arr-white.png") center center no-repeat;
+          width: 40px;
+          height: 30px;
+          right: 0;
+          top: 0;
+          z-index: 600;
+          cursor: pointer; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li > a {
+          color: white;
+          display: block;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 8px 0 8px 26px;
+          text-transform: uppercase;
+          background: #d40e14; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul {
+          padding-top: 15px;
+          min-height: 127px;
+          background: #EBEBEB url("../images/color-box-bg.png") top left no-repeat;
+          position: relative;
+          display: none;
+          /* Menübild muss als &:after eingesetzt werden! */ }
+          .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 230px;
+            height: 127px;
+            background: url("../images/nav-box-back.jpg") left top no-repeat; }
+          .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul li {
+            margin-bottom: 10px;
+            width: 35%; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > .cItemButton {
+        display: block; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > a {
+        /* Pfeil in der Mitte */
+        position: relative;
+        z-index: 500; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > a:after {
+          content: "";
+          width: 28px;
+          height: 16px;
+          background: url("../images/sub-arr-red.png");
+          position: absolute;
+          top: 29px;
+          right: 216px;
+          display: none; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent.cClicked {
+        /* ul per js einblenden */ }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent.cClicked > .cItemButton {
+          background: url("../images/sub-arr-white-up.png") center center no-repeat; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent.cClicked > a:after {
+          display: block; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-208 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-217 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-225 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-236 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-123 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-145 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-146 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-147 > a {
+        background: #ec6601; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-208 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-217 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-225 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-236 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-123 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-145 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-146 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-147 > a:after {
+          background: url("../images/sub-arr-orange.png"); }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-208 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-217 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-225 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-236 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-123 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-145 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-146 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-147 ul li {
+        background: url("../images/orange-bullet-smaller.png") left 2px no-repeat; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-122 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-219 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-268 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-336 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-337 > a {
+        background: #008559; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-122 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-219 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-268 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-336 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-337 > a:after {
+          background: url("../images/sub-arr-green.png"); }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-122 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-219 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-268 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-336 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-337 ul li {
+        background: url("../images/green-bullet-smaller.png") left 2px no-repeat; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-276 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-280 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-193 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-197 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-350 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-351 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-352 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-353 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-354 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-355 > a {
+        background: #b70e77; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-276 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-280 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-193 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-197 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-350 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-351 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-352 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-353 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-354 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-355 > a:after {
+          background: url("../images/sub-arr-violet.png"); }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-276 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-280 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-193 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-197 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-350 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-351 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-352 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-353 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-354 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-355 ul li {
+        background: url("../images/violet-bullet-smaller.png") left 2px no-repeat; }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-198 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-199 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-200 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-201 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-202 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-282 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-283 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-284 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-285 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-286 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-287 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-288 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-289 > a, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-290 > a {
+        background: #004f95; }
+        .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-198 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-199 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-200 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-201 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-202 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-282 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-283 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-284 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-285 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-286 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-287 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-288 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-289 > a:after, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-290 > a:after {
+          background: url("../images/sub-arr-blue.png"); }
+      .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-198 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-199 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-200 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-201 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-202 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-282 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-283 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-284 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-285 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-286 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-287 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-288 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-289 ul li, .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.item-290 ul li {
+        background: url("../images/blue-bullet-smaller.png") left 2px no-repeat; }
+
+.no-js .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li > .cItemButton {
+  display: none; }
+.no-js .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul {
+  display: block; }
+.no-js .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > .cItemButton {
+  display: none; }
+.no-js .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > a:after {
+  display: block; }
+
+.cFooterColors {
+  width: 100%; }
+  .cFooterColors div {
+    display: block;
+    float: left;
+    height: 7px;
+    width: 16.666%; }
+  .cFooterColors .cFooterColor1 {
+    background: #FFD443; }
+  .cFooterColors .cFooterColor2 {
+    background: #ec6601; }
+  .cFooterColors .cFooterColor3 {
+    background: #d40e14; }
+  .cFooterColors .cFooterColor4 {
+    background: #008559; }
+  .cFooterColors .cFooterColor5 {
+    background: #b70e77; }
+  .cFooterColors .cFooterColor6 {
+    background: #004f95; }
+
+/**** SPECIFIC ELEMENTS END ***/
+/**** OBJECTS BEGIN ***/
+/* Browser Advice */
+.cBrowserAdvice p {
+  font-size: 20px;
+  border-bottom: 1px dashed #b6bcc4;
+  padding-bottom: 10px;
+  margin-bottom: 30px; }
+.cBrowserAdvice ul {
+  list-style: none;
+  margin: 0; }
+  .cBrowserAdvice ul li {
+    line-height: 30px;
+    background: none;
+    font-size: 20px;
+    padding: 0;
+    color: #D40E14; }
+    .cBrowserAdvice ul li a {
+      color: #D40E14; }
+      .cBrowserAdvice ul li a:hover {
+        text-decoration: none; }
+
+/* Contact Form / Calculator*/
+.cContaktform, .calculator {
+  background: #E5E5E5;
+  padding: 15px;
+  padding-right: 45%; }
+  .cContaktform fieldset, .calculator fieldset {
+    clear: both;
+    width: 102%;
+    margin-left: -2%;
+    margin-bottom: 5px; }
+  .cContaktform label, .cContaktform input, .cContaktform select, .cContaktform textarea, .calculator label, .calculator input, .calculator select, .calculator textarea {
+    font-size: 12px;
+    font-family: Arial, Tahoma, Verdana, sans-serif; }
+  .cContaktform label, .calculator label {
+    display: block;
+    width: 60px;
+    float: left;
+    margin-left: 2%;
+    height: 25px;
+    line-height: 25px; }
+  .cContaktform input[type="text"], .cContaktform select, .cContaktform textarea, .calculator input[type="text"], .calculator select, .calculator textarea {
+    display: block;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #b6bcc4;
+    width: 48%;
+    margin-left: 2%; }
+  .cContaktform select, .calculator select {
+    width: 48%; }
+  .cContaktform input[type="text"].cAdr, .cContaktform textarea, .calculator input[type="text"].cAdr, .calculator textarea {
+    width: 98%; }
+  .cContaktform textarea, .calculator textarea {
+    min-height: 150px;
+    max-width: 98%;
+    float: none; }
+  .cContaktform input[type="submit"], .cContaktform input[type="reset"], .cContaktform input[type="button"], .calculator input[type="submit"], .calculator input[type="reset"], .calculator input[type="button"] {
+    background: #d00912;
+    border: 0 none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2%; }
+  .cContaktform input[type="reset"], .calculator input[type="reset"] {
+    background: #3a4049; }
+
+.cMainContentModule .moduletable .calculator h3 {
+  padding-left: 0; }
+
+.calculator {
+  font-size: 12px;
+  padding: 15px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .calculator hr {
+    height: 1px;
+    border: none;
+    background: #F7F7F7;
+    margin: 10px 0; }
+  .calculator h3 {
+    margin-top: 0; }
+  .calculator p {
+    font-size: 10px; }
+  .calculator label {
+    width: 180px; }
+  .calculator span {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 2%; }
+  .calculator span.error {
+    color: #D40E14;
+    display: none; }
+  .calculator input[type="text"], .calculator select, .calculator textarea {
+    width: 100px; }
+  .calculator.deposit input[type="text"], .calculator.deposit select, .calculator.deposit textarea {
+    width: 200px; }
+  .calculator input[type="submit"] {
+    margin-left: 2%; }
+
+/**** OBJECTS END ***/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.mobile {
+  display: none; }
+
+/*******************************************************    
+*    MEDIA QUERIES
+*******************************************************/
+@media screen and (max-width: 980px) {
+  .mobile {
+    display: block; }
+
+  header {
+    height: 130px; }
+
+  .cLogo {
+    top: 15px;
+    left: 10px; }
+
+  .cLogoGroup {
+    right: 10px;
+    top: 60px; }
+
+  .cSearch {
+    top: 10px;
+    right: 65px; }
+
+  .cLanguage {
+    top: 15px;
+    right: 10px; }
+
+  .cMainContent {
+    padding: 0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .cMainContentModule .moduletable {
+    /*		
+    &:nth-child(odd){
+    	clear: both;
+    	background: none;
+    }*/ }
+
+  .cMainContentNavModule .moduletable {
+    width: 85%; }
+
+  .cMainColumn {
+    width: 70%; }
+
+  aside {
+    width: 30%; }
+    aside .moduletable:nth-child(3n+4) {
+      clear: both; }
+
+  /* Mobile Menu*/
+  .cTopContentNavModule {
+    display: none; }
+
+  .cMetaNav {
+    display: none; }
+
+  .cMainNavigation {
+    height: auto;
+    background: #eaebec;
+    padding-top: 41px;
+    position: relative; }
+    .cMainNavigation:after {
+      bottom: -4px;
+      width: 98%;
+      right: 1%; }
+    .cMainNavigation #cMenuButton {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 54px;
+      height: 37px; }
+      .cMainNavigation #cMenuButton a.cOpen {
+        background: url("../images/menu-button-open.png") center top no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .cMainNavigation ul.nav {
+      overflow: hidden;
+      height: auto; }
+      .cMainNavigation ul.nav:first-child {
+        border: none; }
+      .cMainNavigation ul.nav li {
+        float: none;
+        background: none;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        transition: height 0.3s ease;
+        width: 100% !important;
+        text-align: left; }
+        .cMainNavigation ul.nav li ul {
+          position: static;
+          margin: 0 0 0 20px;
+          background: none;
+          background: #fff;
+          padding: 0;
+          border: none;
+          width: auto;
+          overflow: visible; }
+          .cMainNavigation ul.nav li ul li {
+            padding: 0;
+            margin: 0;
+            border: none !important;
+            transition: none;
+            height: 25px; }
+            .cMainNavigation ul.nav li ul li a {
+              line-height: 25px;
+              padding-top: 0;
+              padding-bottom: 0;
+              background: url("../images/arrow.png") left 5px no-repeat; }
+            .cMainNavigation ul.nav li ul li ul {
+              position: static;
+              margin: 0 0 0 20px;
+              background: none;
+              padding: 0;
+              border: none;
+              width: auto; }
+              .cMainNavigation ul.nav li ul li ul li:hover > ul {
+                display: block !important; }
+      .cMainNavigation ul.nav li.item-429:after, .cMainNavigation ul.nav li.item-267:after {
+        display: none; }
+    .cMainNavigation .mobile {
+      border-top: 1px solid #fff; }
+
+  #menu:target .cMainNavigation:after, #menu.cNavigate .cMainNavigation:after {
+    bottom: -5px; }
+  #menu:target .cMainNavigation #cMenuButton a.cClose, #menu.cNavigate .cMainNavigation #cMenuButton a.cClose {
+    background: url("../images/menu-button-close.png") center top no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%; }
+  #menu:target .cMainNavigation #cMenuButton a.cOpen, #menu.cNavigate .cMainNavigation #cMenuButton a.cOpen {
+    display: none; }
+  #menu:target .cMainNavigation ul.nav, #menu.cNavigate .cMainNavigation ul.nav {
+    padding-bottom: 10px; }
+    #menu:target .cMainNavigation ul.nav li, #menu.cNavigate .cMainNavigation ul.nav li {
+      height: 25px;
+      min-height: 25px !important; }
+    #menu:target .cMainNavigation ul.nav li.parent:hover, #menu.cNavigate .cMainNavigation ul.nav li.parent:hover {
+      height: auto;
+      min-height: 25px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px; }
+
+  .cContaktform {
+    padding-right: 15px; } }
+@media screen and (max-width: 920px) {
+  .cLogo {
+    max-width: 50%; }
+
+  .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul {
+    /* Menübild muss als &:after eingesetzt werden! */ }
+    .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul:after {
+      display: none; }
+    .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li ul li {
+      width: auto; }
+  .cMainContentNavModule .moduletable.cSubContentMenu ul.nav > li.parent > a:after {
+    display: none !important; } }
+@media screen and (max-width: 730px) {
+  .cMainColumn {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    background: none;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px; }
+
+  .cMainContentNavModule .moduletable {
+    width: 75%; }
+
+  aside {
+    width: 102%;
+    float: none;
+    margin-left: -2%;
+    padding-left: 0; }
+    aside .moduletable, aside .moduletable:first-child {
+      margin-left: 2%;
+      padding-top: 10px;
+      width: 31.333%;
+      float: left;
+      border-top: none; } }
+@media screen and (max-width: 680px) {
+  header {
+    height: 150px;
+    background-color: #fff; }
+
+  .cLogo {
+    max-width: 70%; }
+
+  .cSearch {
+    top: 100px;
+    right: inherit;
+    left: 10px; } }
+@media screen and (max-width: 580px) {
+  aside {
+    width: 100%;
+    margin-left: 0; }
+    aside .moduletable, aside .moduletable:first-child {
+      width: 100%;
+      border-top: 1px dashed #ccc;
+      margin: 0; }
+    aside .moduletable:first-child {
+      border: none; }
+
+  .cImageModule .nivo-caption {
+    position: static;
+    background: #D40E14 !important;
+    margin: 10px 0;
+    width: 100%; }
+
+  .cMainContentNavModule .moduletable {
+    width: 100%; }
+
+  .cContaktform fieldset, .calculator fieldset {
+    margin-bottom: 0; }
+  .cContaktform input[type="text"], .cContaktform select, .cContaktform textarea, .calculator input[type="text"], .calculator select, .calculator textarea {
+    width: 98%;
+    margin-bottom: 5px; }
+  .cContaktform input.cCheckNum, .calculator input.cCheckNum {
+    width: 48%; } }
+@media screen and (max-width: 480px) {
+  .cLogoGroup {
+    display: none; }
+
+  header {
+    height: 130px; }
+
+  .cSearch {
+    top: 80px; }
+
+  .cMainContentModule {
+    width: 100%;
+    margin-left: 0; }
+    .cMainContentModule .moduletable, .cMainContentModule .moduletable.cBorder, .cMainContentModule .moduletable.cThird {
+      width: 100%;
+      margin: 0 0 10px 0;
+      padding: 0;
+      background: none; }
+      .cMainContentModule .moduletable div, .cMainContentModule .moduletable.cBorder div, .cMainContentModule .moduletable.cThird div {
+        float: none !important;
+        width: 100% !important; } }

@@ -1,0 +1,91 @@
+/*
+## ----------------------------------------------------
+## Version: 0.3
+## Last change: 06.08.2013
+## Edited by: Sebastian Mohila
+## Description: CSS file for fnet-Framework
+##
+## (C) 2000 - 2013 formativ.net oHG / Sebastian Mohila
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+
+/* Mitteilungsboxen */
+
+.cInfoMsgInfo,
+.cInfoMsgSuccess,
+.cInfoMsgWarning,
+.cInfoMsgError {
+	margin: 0 0 15px 0;
+	padding: 0px;
+/*
+	max-height: 77px;
+	overflow-x: hidden;
+	overflow-y: auto;
+*/
+}
+
+
+.cInfoMsgInfo {
+	color: #005A8E;
+}
+
+
+.cInfoMsgSuccess {
+	color: #060;
+}
+
+
+.cInfoMsgWarning {
+	color: #D19401;
+}
+
+
+.cInfoMsgError {
+	color: #C00;
+}
+
+
+.cInfoMsgInfo ul,
+.cInfoMsgSuccess  ul,
+.cInfoMsgWarning ul,
+.cInfoMsgError ul {
+	list-style: none;
+	margin: 0 0 0 0px;
+	padding: 0;
+}
+
+
+.cInfoMsgInfo li,
+.cInfoMsgSuccess li,
+.cInfoMsgWarning li,
+.cInfoMsgError li {
+	font-size: 14px;
+	margin: 0;
+	padding: 3px 0 3px 20px;
+	line-height: 14px;
+}
+
+
+.cInfoMsgInfo li {
+	background: transparent url('../images/icons/info.png') no-repeat 0 4px;
+}
+
+
+.cInfoMsgSuccess li {
+	background: transparent url('../images/icons/success.png') no-repeat 0 3px;
+}
+
+
+.cInfoMsgWarning li {
+	background: transparent url('../images/icons/warning.png') no-repeat 0 4px;
+}
+
+
+.cInfoMsgError li {
+	background: transparent url('../images/icons/error.png') no-repeat 0 4px;
+}
+
+.cRequiredField {
+	color: red;
+}

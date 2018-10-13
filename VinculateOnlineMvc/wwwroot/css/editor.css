@@ -1,0 +1,257 @@
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 05.08.2013
+## Edited by: Sebastian Mohila
+## Description: Editor style sheet
+##
+## (C) 2000 - 2013 formativ.net oHG / <Vorname Nachname>
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 05.08.2013
+## Edited by: Sebastian Mohila
+## Description: Global style sheet
+##
+## (C) 2000 - 2013 formativ.net oHG / Vivian Muschter
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+/* colors */
+/* fonts */
+/* dimensions */
+/*
+## ----------------------------------------------------
+## Version: 0.1
+## Last change: 05.08.2013
+## Edited by: Sebastian Mohila
+## Description: Font style sheet
+##
+## (C) 2000 - 2013 formativ.net oHG / <Vorname Nachname>
+## All Rights Reserved
+## ----------------------------------------------------
+*/
+@font-face {
+  font-family: 'MetaProBook';
+  src: url("../fonts/MetaWebPro-Book.eot");
+  src: url("../fonts/MetaWebPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaWebPro-Book.woff") format("woff"), url("../fonts/MetaWebPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MetaProBold';
+  src: url("../fonts/MetaWebPro-Bold.eot");
+  src: url("../fonts/MetaWebPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MetaWebPro-Bold.woff") format("woff"), url("../fonts/MetaWebPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 17, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1,
+h2,
+h3,
+h4, h2, h3, h4, h3, h4, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Users/Vivian/Documents/Portable Programme/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 19, ../scss/editor.scss */
+hmtl, body {
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  font-size: 100%; }
+
+/* line 24, ../scss/editor.scss */
+p, li {
+  line-height: 145%;
+  color: #3a4049;
+  font-size: 12px; }
+
+/* line 30, ../scss/editor.scss */
+p {
+  margin-bottom: 20px; }
+
+/* line 34, ../scss/editor.scss */
+p a {
+  color: #d40e14;
+  text-decoration: none; }
+  /* line 38, ../scss/editor.scss */
+  p a:hover {
+    color: #3a4049; }
+
+/* line 43, ../scss/editor.scss */
+ul, ol {
+  margin-left: 12px;
+  margin-bottom: 20px; }
+  /* line 47, ../scss/editor.scss */
+  ul li, ol li {
+    line-height: 120%;
+    margin-bottom: 10px; }
+
+/* line 53, ../scss/editor.scss */
+ul li {
+  padding-left: 12px;
+  background: url("../images/liste.png") left 3px no-repeat; }
+
+/* line 58, ../scss/editor.scss */
+ol li {
+  list-style: decimal;
+  margin-left: 12px; }
+
+/* line 63, ../scss/editor.scss */
+strong, b {
+  font-weight: bold; }
+
+/* line 67, ../scss/editor.scss */
+h1, h2, h3, h4 {
+  color: #d40e14;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "MetaProBook", Arial, Tahoma, Verdana, sans-serif;
+  font-family: MetaProBook; }
+
+/* line 77, ../scss/editor.scss */
+h2, h3, h4 {
+  text-transform: none;
+  margin-top: 20px;
+  font-family: MetaProBold;
+  font-size: 14px; }
+
+/* line 85, ../scss/editor.scss */
+h3, h4 {
+  font-size: 14px; }
+
+/* line 90, ../scss/editor.scss */
+h4 {
+  color: #3a4049; }
+
+/* line 95, ../scss/editor.scss */
+.red {
+  color: #d40e14; }
+
+/* line 99, ../scss/editor.scss */
+.headline {
+  border-bottom: 1px dashed #b6bcc4;
+  color: #d10c15;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-top: 40px; }
+
+/* line 112, ../scss/editor.scss */
+.nav-button {
+  background: #b6bcc4 url("../images/globe.png") left top no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px; }
+  /* line 118, ../scss/editor.scss */
+  .nav-button a {
+    color: white;
+    padding: 10px 5px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: none; }
+
+/* line 129, ../scss/editor.scss */
+.nav-button:hover {
+  background: #d40e14 url("../images/nav-globe.png") left center no-repeat; }
+  /* line 132, ../scss/editor.scss */
+  .nav-button:hover a {
+    color: white; }
+
+/* line 137, ../scss/editor.scss */
+h3.nav-button, h4.nav-button {
+  margin-top: 0; }
+
+/* line 141, ../scss/editor.scss */
+.image-right {
+  float: right;
+  margin-left: 10px; }
+
+/* line 146, ../scss/editor.scss */
+.image-left {
+  float: left;
+  margin-right: 10px; }
+
+/* line 151, ../scss/editor.scss */
+table {
+  width: 100%; }
+  /* line 156, ../scss/editor.scss */
+  table tr td, table tr th {
+    background: #e5e5e5;
+    color: #000;
+    padding: 5px;
+    line-height: 140%;
+    font-size: 12px;
+    vertical-align: center;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white; }
+  /* line 167, ../scss/editor.scss */
+  table tr td:first-child, table tr th:first-child {
+    background: #aaa;
+    color: white;
+    font-weight: bold; }
+  /* line 173, ../scss/editor.scss */
+  table tr th {
+    font-weight: bold;
+    font-size: 14px; }
