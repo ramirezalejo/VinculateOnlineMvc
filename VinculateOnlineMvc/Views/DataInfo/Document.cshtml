@@ -6,57 +6,85 @@
 }
 
 <div id="header">
-    <div class="custom cLogo">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
     </div>
 
 </div>
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Document">
-            
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <hr />
 
-            <div class="floating-placeholder">
-                <label asp-for="DocNumber" class="control-label"> Digita tu Documento</label>
-                <input asp-for="DocNumber" class="form-control" />
-                <span asp-validation-for="DocNumber" class="text-danger"></span>
-            </div>
-            <div class="floating-placeholder">
-                <label asp-for="DocType" class="control-label">Tipo de Documento  </label>
-                <input asp-for="DocType" class="form-control" />
-                <span asp-validation-for="DocType" class="text-danger"></span>
-            </div>
-                <div class="floating-placeholder">
-                    <label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label>
-                    <input asp-for="FileDocNumber" class="form-control" />                    
-                    <span asp-validation-for="FileDocNumber" class="text-danger"></span>
-                </div>
-            
-                @*<div class="floating-placeholder">
-            <label asp-for="ExpDate" class="control-label"></label>
-            <input asp-for="ExpDate" class="form-control" />
-            <span asp-validation-for="ExpDate" class="text-danger"></span>
+    <div class="row">
+
+        <div class="col-md-4">
+            <form asp-action="Document">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                   <div align="left">
+                   <img src="/images/ATRAS.png" width="50" height="50" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
+                    </div>
+
+                            <center>
+
+                        <div class="floating-placeholder">
+                            <h1><strong><i>Confírmanos el número de tu cédula</i></strong></h1>
+                            <h4><p style="color: #151515;"> <label asp-for="DocNumber" class="control-label"> Ingresa el número de tu cédula</label></h4></p>
+                            <input type="text" maxlength="10" asp-for="DocNumber" class="form-control" />
+                            <span asp-validation-for="DocNumber" class="text-danger"></span>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="floating-placeholder">
+                            <h4>
+                                <p style="color: #151515;"><label asp-for="ExpDate" class="control-label">Confirmanos la fecha de expedición de tu cédula</label></p>
+                                <input type="date" name="fecha" min="1970-01-01" />
+                                <span asp-validation-for="ExpDate" class="text-danger"></span>
+
+                            </h4>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="floating-placeholder">
+                            <h4> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label> </p></h4>
+                            <h2> <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple /></h2>
+                            <span asp-validation-for="FileDocNumber" class="text-danger"></span>
+                        </div>
+
+                        @*<div class="floating-placeholder">
+                    <h2><label asp-for="DocType" class="control-label">Tipo de Documento  </label></h2>
+                    <input asp-for="DocType" class="form-control" />
+                    <span asp-validation-for="DocType" class="text-danger"></span>
+                </div>*@
+
+                        @*<div class="floating-placeholder">
+                    <label asp-for="NameCityDocumentExp" class="control-label"></label>
+                    <input asp-for="NameCityDocumentExp" class="form-control" />
+                    <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
+                </div>*@
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <div class="form-group">
+                            <right>
+                                <img src="/images/Aceptar.png" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
+
+                            </right>
+
+                            @*<input type="submit" value="Siguiente" class="btn btn-default" onclick="location.href='@Url.Action("Home", "Index")'" />*@
+                        </div>
+
+                    </center>
+            </form>
+            <img src="/images/BannerInferior.png" alt="Banner Vinculate" width="1600" height="200">
         </div>
-        <div class="floating-placeholder">
-            <label asp-for="NameCityDocumentExp" class="control-label"></label>
-            <input asp-for="NameCityDocumentExp" class="form-control" />
-            <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
-        </div>*@
-
-                <div class="form-group">
-                    <input type="submit" value="Siguiente" class="btn btn-default" onclick="location.href='@Url.Action("Home", "Index")'" />
-                </div>
-
-
-
-
-        </form>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
     </div>
-</div>
-
 
 
 @section Scripts {

@@ -119,3 +119,13 @@ element.style {
     text-align: center;
     padding: 15px 0;
 }
+
+
+
+.cImageDoc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    padding: 0;
+}
