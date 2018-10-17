@@ -1,0 +1,84 @@
+﻿@model VinculateOnlineMvc.Models.ClientBasicInfo
+
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
+
+</div>
+
+<style>
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: solid gray;
+        outline: medium;
+        width: 10%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ClientInfo_Sec">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+                  <div align="center">
+                      <div align="center">
+                          <div class="floating-placeholder">
+                              <h1 style="font-size:300%;"><i> Confírmanos la fecha de tu nacimiento</i></h1>
+                              <h3><p style="color: #151515;"> <label asp-for="BirthDate" class="control-label"> Fecha de nacimiento</label></h3></p>
+                              <input type="date"  name="fecha" min="1970-01-01" />
+                              <span asp-validation-for="BirthDate" class="text-danger"></span>
+                          </div>
+                          <p>&nbsp;</p>
+                          
+                          <div aligne="right">
+                              <div class="floating-placeholder">
+                                  <h3>
+                                      <p style="color: #151515;"><label asp-for="CountryBirthDate" class="control-label">Confirmanos la fecha de expedición de tu cédula</label></p>
+                                      <input type="date" name="fecha" min="1970-01-01" />
+                                      <span asp-validation-for="CountryBirthDate" class="text-danger"></span>
+                                  </h3>
+                              </div>
+                          </div>
+                          <p>&nbsp;</p>
+                          <div class="floating-placeholder">
+                              <h3> <p style="color: #151515;"><label asp-for="CityBirthDate" class="control-label">Cual es tu ciudad de nacimiento</label> </p></h3>
+                              <h2> <input type="text" placeholder='Ciudad de Nacimiento:' width="100"  name="CityBirthDate" /></h2>
+                              <span asp-validation-for="CityBirthDate" class="text-danger"></span>
+                          </div>
+
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <div class="form-group">
+                              <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
+
+                          </div>
+                      </div>
+                </div>
+            
+
+                @*<div class="form-group">
+                <label asp-for="MaritalStatus" class="control-label"></label>
+                <input asp-for="MaritalStatus" class="form-control" />
+                <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+            </div>*@
+        </form>
+    </div>
+    <p>&nbsp;</p>
+    <center>
+        <img src="/images/BannerInferior.png" width="2600" height="30">
+        <div class="moduletable cSlider">
+            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+        </div>
+    </center>
+
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

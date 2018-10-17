@@ -157,6 +157,17 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
 
+        // GET: DataInfo/ClientInformation
+        public IActionResult ClientInfo()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/ClientInformation
+        public IActionResult ClientInfo_Sec()
+        {
+            return View();
+        }
 
     }
 
