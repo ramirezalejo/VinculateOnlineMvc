@@ -1,63 +1,23 @@
-﻿@model VinculateOnlineMvc.Models.ClientBasicInfo
+﻿@model VinculateOnlineMvc.Models.DataInfo
 
 @{
-    ViewData["Title"] = "ClientInformation";
-    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["Title"] = "Create";
 }
 
-<h2>ClientInformation</h2>
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
 
-<h4>ClientBasicInfo</h4>
+</div>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="ClientInformation">
+        <form asp-action="Document">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SecondName" class="control-label"></label>
-                <input asp-for="SecondName" class="form-control" />
-                <span asp-validation-for="SecondName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstLastName" class="control-label"></label>
-                <input asp-for="FirstLastName" class="form-control" />
-                <span asp-validation-for="FirstLastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="SecondLastName" class="control-label"></label>
-                <input asp-for="SecondLastName" class="form-control" />
-                <span asp-validation-for="SecondLastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthDate" class="control-label"></label>
-                <input asp-for="BirthDate" class="form-control" />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CountryBirthDate" class="control-label"></label>
-                <input asp-for="CountryBirthDate" class="form-control" />
-                <span asp-validation-for="CountryBirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CityBirthDate" class="control-label"></label>
-                <input asp-for="CityBirthDate" class="form-control" />
-                <span asp-validation-for="CityBirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
-                <span asp-validation-for="Gender" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaritalStatus" class="control-label"></label>
-                <input asp-for="MaritalStatus" class="form-control" />
-                <span asp-validation-for="MaritalStatus" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
             </div>
@@ -65,9 +25,9 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+@*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

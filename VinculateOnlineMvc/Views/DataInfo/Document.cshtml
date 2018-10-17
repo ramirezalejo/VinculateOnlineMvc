@@ -37,7 +37,7 @@
                     </div>
                     <p>&nbsp;</p>
                     <div class="floating-placeholder">
-                        <h2> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label> </p></h2>
+                        <h3> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label> </p></h3>
                         <h2> <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple /></h2>
                         <span asp-validation-for="FileDocNumber" class="text-danger"></span>
                     </div>
@@ -57,13 +57,18 @@
                     <p>&nbsp;</p>
                     <div class="form-group">
                         <p><a asp-area="" asp-controller="DataInfo" asp-action="Create"><img src="/images/Aceptar.png" alt="Banner Vinculate" width="100" height="50"></a> </p>
-                        @*<p><a asp-area="" asp-controller="DataInfo" asp-action="Document"><img src="/images/Online.png" alt="Banner Vinculate" width="301" height="84"></a></p>*@
+                        @*<p><a href="https://bancadirecta.bancoprocredit.com.co/HazteCliente" target="_blank" rel="noopener noreferrer"><img src="/images/Vinculate.png" alt="Banner Vinculate" width="301" height="84"></a></p>*@
                     </div>
 
                 </div>
             </form>
             <div>
-                <img src="/images/BannerInferior.png" alt="Banner Vinculate" width="1600" height="200">
+                <center>
+                    <img src="/images/BannerInferior.png" width="2600" height="30">
+                    <div class="moduletable cSlider">
+                        <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                    </div>
+                </center>
             </div>
           </div>
     </div>
