@@ -4,13 +4,19 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
 
-<h4>DataInfo</h4>
+</div>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Document">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -18,10 +24,13 @@
         </form>
     </div>
 </div>
-
 <div>
-    <a asp-action="Index">Back to List</a>
+    <img src="/images/BannerInferior.png" alt="Banner Vinculate" width="1600" height="200">
 </div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

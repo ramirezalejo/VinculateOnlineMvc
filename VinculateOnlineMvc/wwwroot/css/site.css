@@ -129,3 +129,29 @@ element.style {
     z-index: 200;
     padding: 0;
 }
+
+
+
+.login {
+    width: 350px; 
+    position: absolute;
+    top: 10%;
+    left: 50%; 
+    margin-left: -175px;
+}
+
+
+element.style {
+}
+
+.ui.form .field input[type=tel], .ui.form .field input[type=text], .ui.form .field input[type=number], .ui.form .field input[type=email], .ui.form .field option, .ui.form .field select {
+    font-size: 20px;
+    padding-left: 3.2px !important;
+}
+
+.line {
+    height: 2px;
+    border: 1px solid #e1e2e6;
+}
+
+
