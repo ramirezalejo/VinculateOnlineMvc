@@ -16,5 +16,8 @@ namespace VinculateOnlineMvc.Data
         public DbSet<VinculateOnlineMvc.Models.DataInfo> DataInfo { get; set; }
         public DbSet<VinculateOnlineMvc.Models.IdentityDocument> IdentityDocument { get; set; }
         public DbSet<VinculateOnlineMvc.Models.ClientBasicInfo> ClientBasicInfo { get; set; }
+        public DbSet<VinculateOnlineMvc.Models.ContactInfo> ContactInfo { get; set; }
+        public DbSet<VinculateOnlineMvc.Models.EconomicActivity> EconomicActivity { get; set; }
+        public DbSet<VinculateOnlineMvc.Models.Compliance> Compliance { get; set; }
     }
 }

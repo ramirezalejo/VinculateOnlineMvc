@@ -1,6 +1,10 @@
 ﻿@model VinculateOnlineMvc.Models.IdentityDocument
 
+@{
+    Layout = null;
+}
 
+<p>&nbsp;</p>
 <div id="header">
     <div class="cImageDoc">
         <center>
@@ -15,72 +19,73 @@
         border: none;
         border-bottom: solid gray;
         outline: medium;
-        width: 10%;
+        width: 20%;
     }
 </style>
-    
-    <div class="row">
 
-        <div class="col-md-4">
-            <form asp-action="Document">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div style="width: 15%; text-align: right">
-                    <img src="/images/ATRAS.png" width="50" height="50" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
-                </div>
+<div class="row">
 
-
-                <div align="center">
-                    <div align="center">
-                        <div class="floating-placeholder">
-                            <h1 style="font-size:200%;"> <strong><i> Confírmanos el número de tu cédula</i></strong></h1>
-                            <h3><p style="color: #151515;"> <label asp-for="DocNumber" class="control-label"> Ingresa el número de tu cédula</label></h3></p>
-                            <input type="text" maxlength="100" asp-for="DocNumber" class="form-control" />
-                            <span asp-validation-for="DocNumber" class="text-danger"></span>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div aligne="right">
-                            <div class="floating-placeholder">
-                                <h3>
-                                    <p style="color: #151515;"><label asp-for="ExpDate" class="control-label">Confirmanos la fecha de expedición de tu cédula</label></p>
-                                    <input type="date" name="fecha" min="1970-01-01" />
-                                    <span asp-validation-for="ExpDate" class="text-danger"></span>
-                                </h3>
-                            </div>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div class="floating-placeholder">
-                            <h3> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Carga tu Documento</label> </p></h3>
-                            <h2> <input type="file" accept=".pdf,.jpg,.png" multiple/></h2>
-                            <span asp-validation-for="FileDocNumber" class="text-danger"></span>
-                        </div>
-
-                        @*<div class="floating-placeholder">
-                    <h2><label asp-for="DocType" class="control-label">Tipo de Documento  </label></h2>
-                    <input asp-for="DocType" class="form-control" />
-                    <span asp-validation-for="DocType" class="text-danger"></span>
-                </div>*@
-
-                        @*<div class="floating-placeholder">
-                    <label asp-for="NameCityDocumentExp" class="control-label"></label>
-                    <input asp-for="NameCityDocumentExp" class="form-control" />
-                    <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
-                </div>*@
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <div class="form-group">
-                            <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div>
-                <center>
-                    <img src="/images/BannerInferior.png" width="2600" height="30">
-                    <div class="moduletable cSlider">
-                        <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
-                    </div>
-                </center>
+    <div class="col-md-4">
+        <form asp-action="Document">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div style="width: 15%; text-align: right">
+                <img src="/images/ATRAS.png" width="50" height="50" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
             </div>
-          </div>
+
+
+            <div align="center">
+                <div align="center">
+                    <div class="floating-placeholder">
+                        <h1 style="font-size:250%;"> <strong><i> Confírmanos el número de tu cédula</i></strong></h1>
+                        <p>&nbsp;</p>
+                        <h3><p style="color: #151515;"> <label asp-for="DocNumber" class="control-label"> Ingresa el número de tu cédula</label></h3></p>
+                        <input type="text" maxlength="100" asp-for="DocNumber" class="form-control" />
+                        <span asp-validation-for="DocNumber" class="text-danger"></span>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div aligne="right">
+                        <div class="floating-placeholder">
+                            <h3>
+                                <p style="color: #151515;"><label asp-for="ExpDate" class="control-label">Fecha de expedición de tu cédula</label></p>
+                                <input type="date"  name="fecha" min="1970-01-01" />
+                                <span asp-validation-for="ExpDate" class="text-danger"></span>
+                            </h3>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="floating-placeholder">
+                        <h3> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Adjunta una imagen de tu cédula</label> </p></h3>
+                        <h2> <input type="file"  accept=".pdf,.jpg,.png" multiple /></h2>
+                        <span asp-validation-for="FileDocNumber" class="text-danger"></span>
+                    </div>
+
+                    @*<div class="floating-placeholder">
+                            <h2><label asp-for="DocType" class="control-label">Tipo de Documento  </label></h2>
+                            <input asp-for="DocType" class="form-control" />
+                            <span asp-validation-for="DocType" class="text-danger"></span>
+                        </div>*@
+
+                    @*<div class="floating-placeholder">
+                            <label asp-for="NameCityDocumentExp" class="control-label"></label>
+                            <input asp-for="NameCityDocumentExp" class="form-control" />
+                            <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
+                        </div>*@
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div>
+            <center>
+                <img src="/images/BannerInferior.png" width="2600" height="30">
+                <div class="moduletable cSlider">
+                    <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                </div>
+            </center>
+        </div>
     </div>
+</div>

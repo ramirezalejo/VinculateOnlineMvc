@@ -169,6 +169,47 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
 
+        // GET: DataInfo/ContactClientInfo
+        public IActionResult ContactClientInfo()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/ClientEconomicActivity
+        public IActionResult ClientEconomicActivity()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/EmployeesActivity
+        public IActionResult EmployeesActivity()
+        {
+            return View();
+        }
+        // GET: DataInfo/OwnBusiness
+        public IActionResult OwnBusiness()
+        {
+            return View();
+        }
+        // GET: DataInfo/Income_Expense
+        public IActionResult Income_Expense()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/Deposits
+        public IActionResult Deposits()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/ComplianceInfo
+        public IActionResult ComplianceInfo()
+        {
+            return View();
+        }
+
+
     }
 
 

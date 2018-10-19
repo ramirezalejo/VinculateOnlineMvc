@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
@@ -8,7 +9,7 @@ namespace VinculateOnlineMvc.Models
 {
     public class EconomicActivity
     {
-
+        [Key]
         /*Fuente de ingresos(Ocupación actual)*/
         public int EconomicActivityType { get; set; }
 

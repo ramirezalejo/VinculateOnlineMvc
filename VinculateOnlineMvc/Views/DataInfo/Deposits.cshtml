@@ -1,0 +1,94 @@
+﻿@model VinculateOnlineMvc.Models.EconomicActivity
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<style>
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: solid gray;
+        outline: medium;
+        width: 40%;
+    }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Deposits</title>
+</head>
+<body>
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+    <div id="header">
+        <div class="cImageDoc">
+            <center>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+            </center>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Deposits">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div style="width: 15%; text-align: right">
+                    <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientEconomicActivity"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
+                </div>
+
+                <p>&nbsp;</p>
+                <div style="width: 100%; text-align: center; float: right;">
+                    <h2><label>Esta información es requerida para configurar tu cuenta</label></h2>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <h2><label asp-for="CountDeposit" class="control-label">¿Cuántos depósitos realizarás en el mes?</label></h2>
+                        <input asp-for="CountDeposit" placeholder="Ejemplo: 5 " class="form-control" />
+                        <span asp-validation-for="CountDeposit" class="text-danger"></span>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <h2><label asp-for="SumDeposit" class="control-label">Y tu monto de depósitos mensuales será:</label></h2>
+                        <input asp-for="SumDeposit" placeholder="$ " class="form-control" />
+                        <span asp-validation-for="SumDeposit" class="text-danger"></span>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <section><h3>  ¿Pagas impuestos en otros países?</h3>  </section>
+                            <input asp-for="PayTaxCountry" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <section><h3> ¿Realizas operaciones o tienes una cuenta en moneda extrangera? </h3></section>
+                            <input asp-for="TransactionsDifCOP" />
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div style="width: 100%; text-align: center">
+        <p><a asp-area="" asp-controller="DataInfo" asp-action="ComplianceInfo"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
+    </div>
+    <p>&nbsp;</p>
+    <center>
+
+        <img src="/images/BannerInferior.png" width="2600" height="30">
+        <div class="moduletable cSlider">
+            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+        </div>
+
+    </center>
+
+</body>
+</html>
