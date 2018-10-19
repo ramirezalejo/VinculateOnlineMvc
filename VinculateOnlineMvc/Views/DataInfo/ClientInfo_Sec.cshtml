@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-
+<p>&nbsp;</p>
 <div id="header">
     <div class="cImageDoc">
         <center>
@@ -25,6 +25,7 @@
 
 <div class="row">
     <div class="col-md-4">
+        <p>&nbsp;</p>
 
         <div style="width: 15%; text-align: right">
             <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
@@ -57,7 +58,7 @@
 
                 <div style="width: 50%; text-align: center; float: left;">
                     @*<h2>   <label asp-for="MaritalStatus" class="control-label">Estado Civil</label></h2>
-            <input asp-for="MaritalStatus" class="form-control" />*@
+                    <input asp-for="MaritalStatus" class="form-control" />*@
                     <h2>
                         <label>Estado Civil : </label>
                         <select name="MaritalStatus">
@@ -77,8 +78,8 @@
                     <h3><span asp-validation-for="CityBirthDate" class="text-danger"></span></h3>
 
                     @*<h2><label asp-for="CountryBirthDate" class="control-label">Pais de nacimiento</label></h2>
-            <input type="text" name="fecha" min="1970-01-01" />
-            <span asp-validation-for="CountryBirthDate" class="text-danger"></span>*@
+                    <input type="text" name="fecha" min="1970-01-01" />
+                    <span asp-validation-for="CountryBirthDate" class="text-danger"></span>*@
 
                     @*placeholder='Ciudad de Nacimiento:'*@
                 </div>
