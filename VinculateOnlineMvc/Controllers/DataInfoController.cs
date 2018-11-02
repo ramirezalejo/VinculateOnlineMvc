@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using VinculateOnlineMvc.Data;
@@ -152,10 +153,25 @@ namespace VinculateOnlineMvc.Controllers
 
 
         // GET: DataInfo/Document
-        public IActionResult Document()
+   
+        public IActionResult Document(IdentityDocument id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty (isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.IdentityDocument.Add(id);
+                    db.SaveChanges();
+                }
+                return RedirectToAction("ClientInfo");
+            }
+            return View(id);
         }
+    
 
         // GET: DataInfo/ClientInformation
         public IActionResult ClientInfo()
@@ -237,6 +253,12 @@ namespace VinculateOnlineMvc.Controllers
         }
         // GET: DataInfo/PublicInfo
         public IActionResult PublicInfo()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/test
+        public IActionResult test()
         {
             return View();
         }

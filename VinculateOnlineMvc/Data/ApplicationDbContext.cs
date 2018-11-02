@@ -7,7 +7,7 @@ using VinculateOnlineMvc.Models;
 
 namespace VinculateOnlineMvc.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -21,5 +21,7 @@ namespace VinculateOnlineMvc.Data
         public DbSet<VinculateOnlineMvc.Models.Compliance> Compliance { get; set; }
         public DbSet<VinculateOnlineMvc.Models.YInternationalOperations> YInternationalOperations { get; set; }
         public DbSet<VinculateOnlineMvc.Models.AditionalInfo> AditionalInfo { get; set; }
+
+
     }
 }
