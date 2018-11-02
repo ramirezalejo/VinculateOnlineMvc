@@ -11,7 +11,7 @@
         border: none;
         border-bottom: solid gray;
         outline: medium;
-        width: 40%;
+        width: 30%;
     }
 </style>
 
@@ -39,7 +39,7 @@
                     <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientEconomicActivity"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
                 </div>
                 <p>&nbsp;</p>
-
+               
                 <div style="width: 100%; text-align: center; float: right;">
                     <p>&nbsp;</p>
                     <div class="form-group">
@@ -47,12 +47,23 @@
                         <input asp-for="Income" placeholder="$ " type="number" class="form-control" />
                         <span asp-validation-for="Income" class="text-danger"></span>
                     </div>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
+                     <p>&nbsp;</p>
                     <div class="form-group">
                         <h2><label asp-for="Expense" class="control-label">¿Cuál es el total de tus gastos mensuales?</label></h2>
                         <input asp-for="Expense" placeholder="$ " type="number" class="form-control" />
                         <span asp-validation-for="Expense" class="text-danger"></span>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <h2><label asp-for="Assets" class="control-label">¿Cuál es el total de tus Bienes y Activos?</label></h2>
+                        <input asp-for="Assets" placeholder="Ejemplo: Casa, Carro, otros" type="number" class="form-control" />
+                        <span asp-validation-for="Assets" class="text-danger"></span>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="form-group">
+                        <h2><label asp-for="Liabilities" class="control-label">¿Cuál es el total de tus deudas?</label></h2>
+                        <input asp-for="Liabilities" placeholder="$ " type="number" class="form-control" />
+                        <span asp-validation-for="Liabilities" class="text-danger"></span>
                     </div>
                 </div>
 

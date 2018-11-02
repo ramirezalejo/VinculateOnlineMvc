@@ -209,6 +209,38 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
 
+        // GET: DataInfo/Internationaloperations
+        public IActionResult Internationaloperations()
+        {
+            return View();
+        }
+
+        // GET: DataInfo/InternationalAccounts
+        public IActionResult InternationalAccounts()
+        {
+            return View();
+        }
+        // GET: DataInfo/YIntOperations
+        public IActionResult YIntOperations()
+        {
+            return View();
+        }
+        // GET: DataInfo/AccountIntOpe
+        public IActionResult AccountIntOpe()
+        {
+            return View();
+        }
+        // GET: DataInfo/PayTaxCountry
+        public IActionResult PayTaxCountry()
+        {
+            return View();
+        }
+        // GET: DataInfo/PublicInfo
+        public IActionResult PublicInfo()
+        {
+            return View();
+        }
+        
 
     }
 

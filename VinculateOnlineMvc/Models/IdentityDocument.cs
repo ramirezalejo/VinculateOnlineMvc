@@ -16,6 +16,6 @@ namespace VinculateOnlineMvc.Models
         public int DocType { get; set; }
         public byte[] FileDocNumber { get; set;}
         public DateTime ExpDate { get; set; }
-        public int NameCityDocumentExp{ get; set; }
+        public string NameCityDocumentExp { get; set; }
     }
 }

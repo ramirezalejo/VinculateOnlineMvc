@@ -11,7 +11,7 @@
         border: none;
         border-bottom: solid gray;
         outline: medium;
-        width: 40%;
+        width: 30%;
     }
 </style>
 <html>
@@ -43,7 +43,7 @@
 
                 <p>&nbsp;</p>
                 <div style="width: 100%; text-align: center; float: right;">
-                    <h2><label>Esta información es requerida para configurar tu cuenta</label></h2>
+                    <h1><label>Esta información es requerida para configurar tu cuenta</label></h1>
                     <p>&nbsp;</p>
                     <div class="form-group">
                         <h2><label asp-for="CountDeposit" class="control-label">¿Cuántos depósitos realizarás en el mes?</label></h2>
@@ -56,29 +56,14 @@
                         <input asp-for="SumDeposit" placeholder="$ " class="form-control" />
                         <span asp-validation-for="SumDeposit" class="text-danger"></span>
                     </div>
-                    <p>&nbsp;</p>
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <section><h3>  ¿Pagas impuestos en otros países?</h3>  </section>
-                            <input asp-for="PayTaxCountry" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <section><h3> ¿Realizas operaciones o tienes una cuenta en moneda extrangera? </h3></section>
-                            <input asp-for="TransactionsDifCOP" />
-
-                        </div>
-
-                    </div>
-                </div>
+                   </div>
             </form>
         </div>
     </div>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <div style="width: 100%; text-align: center">
-        <p><a asp-area="" asp-controller="DataInfo" asp-action="ComplianceInfo"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
+        <p><a asp-area="" asp-controller="DataInfo" asp-action="Internationaloperations"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
     </div>
     <p>&nbsp;</p>
     <center>

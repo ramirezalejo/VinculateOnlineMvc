@@ -38,38 +38,46 @@
                     <div class="floating-placeholder">
                         <h1 style="font-size:250%;"> <strong><i> Confírmanos el número de tu cédula</i></strong></h1>
                         <p>&nbsp;</p>
-                        <h3><p style="color: #151515;"> <label asp-for="DocNumber" class="control-label"> Ingresa el número de tu cédula</label></h3></p>
-                        <input type="text" maxlength="100" asp-for="DocNumber" class="form-control" />
+                        <h3>
+                            <p style="color: #151515;"> <label asp-for="DocNumber" class="control-label"> Ingresa el número de tu cédula</label>
+                        </h3></p>
+                        <h1> <input type="text" maxlength="10" asp-for="DocNumber" class="form-control" /></h1>
                         <span asp-validation-for="DocNumber" class="text-danger"></span>
-                    </div>
+                        <p>&nbsp;</p>
+                        <h3><p style="color: #151515;"> <label asp-for="NameCityDocumentExp" class="control-label"> Ingresa el lugar de expedición</label></h3></p>
+                        <h1>
+                            <input asp-for="NameCityDocumentExp" class="form-control" /></h1>
+                            <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
+
+</div>
                     <p>&nbsp;</p>
+                    <div style="width: 110%; text-align: center;">
+                        <p><a><img src="/images/Cedula.png" alt="Banner Vinculate" width="500" height="200"></a> </p>
+                    </div>
                     <div aligne="right">
                         <div class="floating-placeholder">
-                            <h3>
-                                <p style="color: #151515;"><label asp-for="ExpDate" class="control-label">Fecha de expedición de tu cédula</label></p>
-                                <input type="date"  name="fecha" min="1970-01-01" />
-                                <span asp-validation-for="ExpDate" class="text-danger"></span>
-                            </h3>
+                            <h3> <p style="color: #151515;"><label asp-for="ExpDate" class="control-label">Fecha de expedición de tu cédula</label></p></h3>
+                                <h3> <input type="date" name="fecha" min="1970-01-01" />  </h3>
+                                    <span asp-validation-for="ExpDate" class="text-danger"></span>
+                                
                         </div>
                     </div>
                     <p>&nbsp;</p>
                     <div class="floating-placeholder">
                         <h3> <p style="color: #151515;"><label asp-for="FileDocNumber" class="control-label">Adjunta una imagen de tu cédula</label> </p></h3>
-                        <h2> <input type="file"  accept=".pdf,.jpg,.png" multiple /></h2>
+                        <h2> <input type="file" accept=".pdf,.jpg,.png" multiple /></h2>
                         <span asp-validation-for="FileDocNumber" class="text-danger"></span>
                     </div>
 
                     @*<div class="floating-placeholder">
-                            <h2><label asp-for="DocType" class="control-label">Tipo de Documento  </label></h2>
-                            <input asp-for="DocType" class="form-control" />
-                            <span asp-validation-for="DocType" class="text-danger"></span>
-                        </div>*@
+            <h2><label asp-for="DocType" class="control-label">Tipo de Documento  </label></h2>
+            <input asp-for="DocType" class="form-control" />
+            <span asp-validation-for="DocType" class="text-danger"></span>
+        </div>*@
 
                     @*<div class="floating-placeholder">
-                            <label asp-for="NameCityDocumentExp" class="control-label"></label>
-                            <input asp-for="NameCityDocumentExp" class="form-control" />
-                            <span asp-validation-for="NameCityDocumentExp" class="text-danger"></span>
-                        </div>*@
+         
+        </div>*@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <div class="form-group">

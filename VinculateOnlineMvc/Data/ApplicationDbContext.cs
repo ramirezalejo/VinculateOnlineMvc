@@ -19,5 +19,7 @@ namespace VinculateOnlineMvc.Data
         public DbSet<VinculateOnlineMvc.Models.ContactInfo> ContactInfo { get; set; }
         public DbSet<VinculateOnlineMvc.Models.EconomicActivity> EconomicActivity { get; set; }
         public DbSet<VinculateOnlineMvc.Models.Compliance> Compliance { get; set; }
+        public DbSet<VinculateOnlineMvc.Models.YInternationalOperations> YInternationalOperations { get; set; }
+        public DbSet<VinculateOnlineMvc.Models.AditionalInfo> AditionalInfo { get; set; }
     }
 }

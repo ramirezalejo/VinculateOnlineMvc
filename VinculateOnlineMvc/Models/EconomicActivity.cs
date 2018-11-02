@@ -36,5 +36,13 @@ namespace VinculateOnlineMvc.Models
 
         /*●	¿Cuál será el monto de los depósitos mensuales?*/
         public int SumDeposit { get; set; }
+
+        public string ActivityEcoCompany { get; set; }
+        public string NameCompany { get; set; }
+        public string Jobtitle { get; set; }
+        public string DateStarJob { get; set; }
+        public string AddressCompany { get; set; }
+
+
     }
 }
