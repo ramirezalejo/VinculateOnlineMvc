@@ -165,7 +165,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.IdentityDocument.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("ClientInfo");
             }
