@@ -60,7 +60,7 @@
                         <div aligne="right">
                             <div class="floating-placeholder">
                                 <h3 style="color: #151515;"><label asp-for="ExpDate" class="control-label">Fecha de expedición de tu cédula</label></h3>
-                                <input type="date" name="fecha" min="1970-01-01" required />  
+                                <input type="date" asp-for="ExpDate"  class="form-control"  required />  
                                 <span asp-validation-for="ExpDate" class="text-danger"></span>
 
                             </div>

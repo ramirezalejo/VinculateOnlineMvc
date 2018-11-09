@@ -13,16 +13,13 @@ namespace VinculateOnlineMvc.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IdenDocNumberID { get; set; }
-
-        [Range(1,100000000000 ,ErrorMessage = "Numero de documento no valido")]
         public string DocNumber { get; set; }
-        public int DocType { get; set; }
+
+        
+        public int DocType { get; set; } = 1;
+
         public byte[] FileDocNumber { get; set;}
-
-        [Required(ErrorMessage = "Fecha de expiracion es obligatoria")]
         public DateTime ExpDate { get; set; }
-
-        [Required(ErrorMessage = "El lugar de expediciones obligatorio")]
         public string NameCityDocumentExp { get; set; }
     }
 }
