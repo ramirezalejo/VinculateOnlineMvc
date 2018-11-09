@@ -29,7 +29,7 @@
 
         <div class="col-md-4">
             <form asp-action="Document">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div asp-validation-summary="All" class="text-danger"></div>
 
                 <div style="width: 15%; text-align: right">
                     <img src="/images/ATRAS.png" width="50" height="50" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
@@ -75,11 +75,10 @@
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
 
-                        <button type="submit" name="isSubmit" style="border-style: none;background: none;">
+                        <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
                             <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
                         </button>
 
-                   
                     </div>
                 </div>
 
