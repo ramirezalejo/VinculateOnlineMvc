@@ -171,7 +171,6 @@ namespace VinculateOnlineMvc.Controllers
             }
             return View(id);
         }
-    
 
         // GET: DataInfo/ClientInformation
         public IActionResult ClientInfo(ClientBasicInfo id, string isSubmit)
