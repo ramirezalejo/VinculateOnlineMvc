@@ -4,36 +4,26 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
+
+</div>
+
 <style>
     input {
         background: transparent;
         border: none;
         border-bottom: solid gray;
         outline: medium;
-        width: 40%;
+        width: 30%;
     }
 </style>
 
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ComplianceInfo</title>
-</head>
-<body>
-
-    <p>&nbsp;</p>
-
-    <p>&nbsp;</p>
-    <div id="header">
-        <div class="cImageDoc">
-            <center>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
-            </center>
-        </div>
-
-    </div>
+<div class="custom">
 
     <div class="row">
         <div class="col-md-4">
@@ -58,7 +48,7 @@
                                 <section>
                                     así como el reglamento de cuentas de ahorros.
                                 </section>
-                                <input asp-for="PrivacyAgrement" />
+                                <input asp-for="PrivacyAgrement" required />
 
 
                                 <p>&nbsp;</p>
@@ -66,39 +56,33 @@
                                 <section>
                                     actividad economica y/o son parte de mi patrimonio. Estos recursos son de origen licito.
                                 </section>
-                                <input asp-for="LawfulMoney" />
+                                <input asp-for="LawfulMoney" required />
 
                                 <p>&nbsp;</p>
                                 <section>  Declaro que los recursos no son administrado a favor de terceras personas.  </section>
-                                <input asp-for="OwnMoney" />
+                                <input asp-for="OwnMoney" required />
                                 <p>&nbsp;</p>
                                 <section>Declaro que toda la información registrada es auditable. </section>
-                                <input asp-for="AcceptAgrement" />
+                                <input asp-for="AcceptAgrement" required />
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+                <center>
+                    <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
+                        <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
+                    </button>
+                </center>
             </form>
+            <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+            <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+            <center>
+                <img src="/images/BannerInferior.png" width="2600" height="30">
+                <div class="moduletable cSlider">
+                    <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                </div>
+            </center>
         </div>
     </div>
-
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <div style="width: 100%; text-align: center">
-        @*<p><a asp-area="" asp-controller="DataInfo" asp-action="ClientEconomicActivity"><img src="/images/Finalizar.png" alt="Banner Vinculate" width="150" height="60"> </a> </p>*@
-        <img src="/images/Finalizar.png" width="150" height="60" alt="Banner Vinculate" onclick="location.href='@Url.Action( "Index","Home")'" />
-    </div>
-    <p>&nbsp;</p>
-    <center>
-
-        <img src="/images/BannerInferior.png" width="2600" height="30">
-        <div class="moduletable cSlider">
-            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
-        </div>
-
-    </center>
-
-</body>
-</html>
+</div>

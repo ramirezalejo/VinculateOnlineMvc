@@ -13,7 +13,7 @@ namespace VinculateOnlineMvc.Models
         
         
         public int IdenDocNumberID { get; set; }
-        [Range(6, 10)]
+        
         public string DocNumber { get; set; }
         public int DocType { get; set; }
         public byte[] FileDocNumber { get; set;}

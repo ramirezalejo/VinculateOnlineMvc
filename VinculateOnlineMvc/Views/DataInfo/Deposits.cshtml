@@ -3,8 +3,15 @@
 @{
     Layout = null;
 }
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
 
-<!DOCTYPE html>
+</div>
+
 <style>
     input {
         background: transparent;
@@ -14,28 +21,12 @@
         width: 30%;
     }
 </style>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Deposits</title>
-</head>
-<body>
-    <p>&nbsp;</p>
 
-    <p>&nbsp;</p>
-    <div id="header">
-        <div class="cImageDoc">
-            <center>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
-            </center>
-        </div>
-
-    </div>
-
+<div class="custom">
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Deposits">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div asp-validation-summary="All" class="text-danger"></div>
 
                 <div style="width: 15%; text-align: right">
                     <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientEconomicActivity"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
@@ -44,36 +35,34 @@
                 <p>&nbsp;</p>
                 <div style="width: 100%; text-align: center; float: right;">
                     <h1><label>Esta información es requerida para configurar tu cuenta</label></h1>
-                    <p>&nbsp;</p>
+                    <p>&nbsp;</p> <p>&nbsp;</p>
                     <div class="form-group">
                         <h2><label asp-for="CountDeposit" class="control-label">¿Cuántos depósitos realizarás en el mes?</label></h2>
-                        <input asp-for="CountDeposit" placeholder="Ejemplo: 5 " class="form-control" />
+                        <input asp-for="CountDeposit" placeholder="Ejemplo: 5 " class="form-control" required/>
                         <span asp-validation-for="CountDeposit" class="text-danger"></span>
                     </div>
                     <p>&nbsp;</p>
                     <div class="form-group">
                         <h2><label asp-for="SumDeposit" class="control-label">Y tu monto de depósitos mensuales será:</label></h2>
-                        <input asp-for="SumDeposit" placeholder="$ " class="form-control" />
+                        <input asp-for="SumDeposit" placeholder="$ " class="form-control" required />
                         <span asp-validation-for="SumDeposit" class="text-danger"></span>
                     </div>
-                   </div>
+                </div>
+                <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+                <center>
+                    <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
+                        <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
+                    </button>
+                </center>
             </form>
+            <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+            <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
+            <center>
+                <img src="/images/BannerInferior.png" width="2600" height="30">
+                <div class="moduletable cSlider">
+                    <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                </div>
+            </center>
         </div>
     </div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <div style="width: 100%; text-align: center">
-        <p><a asp-area="" asp-controller="DataInfo" asp-action="Internationaloperations"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
-    </div>
-    <p>&nbsp;</p>
-    <center>
-
-        <img src="/images/BannerInferior.png" width="2600" height="30">
-        <div class="moduletable cSlider">
-            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
-        </div>
-
-    </center>
-
-</body>
-</html>
+</div>

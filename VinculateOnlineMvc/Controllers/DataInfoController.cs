@@ -156,7 +156,7 @@ namespace VinculateOnlineMvc.Controllers
    
         public IActionResult Document(IdentityDocument id, string isSubmit)
         {
-            if (string.IsNullOrEmpty (isSubmit))
+            if (string.IsNullOrEmpty(isSubmit))
             {
                 return View();
             }
@@ -165,7 +165,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.IdentityDocument.Add(id);
-                    db.SaveChanges();
+                    //db.SaveChanges();
                 }
                 return RedirectToAction("ClientInfo");
             }
@@ -174,7 +174,7 @@ namespace VinculateOnlineMvc.Controllers
     
 
         // GET: DataInfo/ClientInformation
-        public IActionResult ClientInfo(ClientBasicInfo idc, string isSubmit)
+        public IActionResult ClientInfo(ClientBasicInfo id, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
@@ -184,24 +184,50 @@ namespace VinculateOnlineMvc.Controllers
             {
                 using (var db = _context)
                 {
-                    db.ClientBasicInfo.Add(idc);
-                    db.SaveChanges();
+                    db.ClientBasicInfo.Add(id);
+                    //db.SaveChanges();
                 }
                 return RedirectToAction("ClientInfo_Sec");
             }
-            return View(idc);
+            return View(id);
         }
 
         // GET: DataInfo/ClientInformation
-        public IActionResult ClientInfo_Sec()
+        public IActionResult ClientInfo_Sec(ClientBasicInfo id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.ClientBasicInfo.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("ContactClientInfo");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/ContactClientInfo
-        public IActionResult ContactClientInfo()
+        public IActionResult ContactClientInfo(ContactInfo id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.ContactInfo.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("ClientEconomicActivity");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/ClientEconomicActivity
@@ -211,37 +237,115 @@ namespace VinculateOnlineMvc.Controllers
         }
 
         // GET: DataInfo/EmployeesActivity
-        public IActionResult EmployeesActivity()
+        public IActionResult EmployeesActivity(EconomicActivity id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.EconomicActivity.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("Income_Expense");
+            }
+            return View(id);
         }
         // GET: DataInfo/OwnBusiness
-        public IActionResult OwnBusiness()
+        public IActionResult OwnBusiness(EconomicActivity id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.EconomicActivity.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("Income_Expense");
+            }
+            return View(id);
         }
         // GET: DataInfo/Income_Expense
-        public IActionResult Income_Expense()
+        public IActionResult Income_Expense(EconomicActivity id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.EconomicActivity.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("Deposits");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/Deposits
-        public IActionResult Deposits()
+        public IActionResult Deposits(EconomicActivity id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.EconomicActivity.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("Internationaloperations");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/ComplianceInfo
-        public IActionResult ComplianceInfo()
+        public IActionResult ComplianceInfo(Compliance id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.Compliance.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("home");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/Internationaloperations
-        public IActionResult Internationaloperations()
+        public IActionResult Internationaloperations(EconomicActivity id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.EconomicActivity.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("YIntOperations");
+            }
+            return View(id);
         }
 
         // GET: DataInfo/InternationalAccounts
@@ -250,14 +354,40 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
         // GET: DataInfo/YIntOperations
-        public IActionResult YIntOperations()
+        public IActionResult YIntOperations(YInternationalOperations id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.YInternationalOperations.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("InternationalAccounts");
+            }
+            return View(id);
         }
         // GET: DataInfo/AccountIntOpe
-        public IActionResult AccountIntOpe()
+        public IActionResult AccountIntOpe(YInternationalOperations id, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.YInternationalOperations.Add(id);
+                    //db.SaveChanges();
+                }
+                return RedirectToAction("PayTaxCountry");
+            }
+            return View(id);
         }
         // GET: DataInfo/PayTaxCountry
         public IActionResult PayTaxCountry()

@@ -3,6 +3,15 @@
 @{
     Layout = null;
 }
+
+<div id="header">
+    <div class="cImageDoc">
+        <center>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
+        </center>
+    </div>
+
+</div>
 <style>
     input {
         background: transparent;
@@ -12,67 +21,53 @@
         width: 40%;
     }
 </style>
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>EmployeesActivity</title>
-</head>
-<body>
-    <p>&nbsp;</p>
-    <div id="header">
-        <div class="cImageDoc">
-            <center>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/es/home.html"><img src="~/images/banco_procredit_logo_main.png" alt="banco procredit logo main"></a></p>
-            </center>
-        </div>
 
-    </div>
 
+<div class="custom">
     <div class="row">
         <div class="col-md-4">
             <form asp-action="EmployeesActivity">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+
                 <div style="width: 15%; text-align: right">
                     <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientEconomicActivity"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
                 </div>
                 <div style="width: 54%; text-align: right">
                     <p><a><img src="/images/Asalariado.png" alt="Banner Vinculate" width="200" height="200"></a> </p>
                 </div>
-      
+
                 <div style="width: 100%; text-align: center; float: right;">
                     <h2><label class="NameCompany">Donde Trabajas</label></h2>
-                    <input type="text" placeholder="Ejemplo: Nombre de la compañia: " class="form-control" />
+                    <input type="text" placeholder="Ejemplo: Nombre de la compañia: " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="ActivityEcoCompany">Actividad Economica de la empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Construcción: " class="form-control" />
+                    <input type="text" placeholder="Ejemplo: Construcción: " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="Jobtitle">Cual es tu cargo</label></h2>
-                    <input type="text" placeholder="Ejemplo: Jefe de Sistemas: " class="form-control" />
+                    <input type="text" placeholder="Ejemplo: Jefe de Sistemas: " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="DateStarJob">Fecha de ingreso</label></h2>
-                    <input type="date" class="form-control" />
+                    <input type="date" class="form-control" required />
 
                 </div>
-
+                <p>&nbsp;</p><p>&nbsp;</p>
+                <center>
+                    <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
+                        <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
+                    </button>
+                </center>
             </form>
-        </div>
-    </div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <div style="width: 100%; text-align: center">
-        <p><a asp-area="" asp-controller="DataInfo" asp-action="Income_Expense"><img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60"></a> </p>
-    </div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            <center>
+                <img src="/images/BannerInferior.png" width="2600" height="30">
+                <div class="moduletable cSlider">
+                    <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                </div>
+            </center>
 
-    <center>
-        <img src="/images/BannerInferior.png" width="2600" height="30">
-        <div class="moduletable cSlider">
-            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
         </div>
-    </center>
-</body>
-</html>
+    </div>
+</div>
+
