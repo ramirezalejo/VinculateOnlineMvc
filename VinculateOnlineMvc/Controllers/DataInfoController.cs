@@ -174,9 +174,22 @@ namespace VinculateOnlineMvc.Controllers
     
 
         // GET: DataInfo/ClientInformation
-        public IActionResult ClientInfo()
+        public IActionResult ClientInfo(ClientBasicInfo idc, string isSubmit)
         {
-            return View();
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            if (ModelState.IsValid)
+            {
+                using (var db = _context)
+                {
+                    db.ClientBasicInfo.Add(idc);
+                    db.SaveChanges();
+                }
+                return RedirectToAction("ClientInfo_Sec");
+            }
+            return View(idc);
         }
 
         // GET: DataInfo/ClientInformation
