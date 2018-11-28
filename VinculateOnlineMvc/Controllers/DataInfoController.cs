@@ -151,9 +151,19 @@ namespace VinculateOnlineMvc.Controllers
             return _context.DataInfo.Any(e => e.ClientID == id);
         }
 
+        // GET: DataInfo/AccountDetails
+        public IActionResult AccountDetails(string isSubmit)
+        {
+            if (string.IsNullOrEmpty(isSubmit))
+            {
+                return View();
+            }
+            return RedirectToAction("Document");
+        }
+
 
         // GET: DataInfo/Document
-   
+
         public IActionResult Document(IdentityDocument id, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
@@ -184,7 +194,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.ClientBasicInfo.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("ClientInfo_Sec");
             }
@@ -203,7 +213,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.ClientBasicInfo.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("ContactClientInfo");
             }
@@ -222,7 +232,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.ContactInfo.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("ClientEconomicActivity");
             }
@@ -247,7 +257,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.EconomicActivity.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("Income_Expense");
             }
@@ -265,7 +275,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.EconomicActivity.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("Income_Expense");
             }
@@ -283,7 +293,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.EconomicActivity.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("Deposits");
             }
@@ -302,7 +312,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.EconomicActivity.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("Internationaloperations");
             }
@@ -321,7 +331,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.Compliance.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("home");
             }
@@ -340,7 +350,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.EconomicActivity.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("YIntOperations");
             }
@@ -364,7 +374,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.YInternationalOperations.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("InternationalAccounts");
             }
@@ -382,7 +392,7 @@ namespace VinculateOnlineMvc.Controllers
                 using (var db = _context)
                 {
                     db.YInternationalOperations.Add(id);
-                    //db.SaveChanges();
+                    db.SaveChanges();
                 }
                 return RedirectToAction("PayTaxCountry");
             }
@@ -399,11 +409,7 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
 
-        // GET: DataInfo/test
-        public IActionResult test()
-        {
-            return View();
-        }
+       
         
 
     }

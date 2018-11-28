@@ -54,7 +54,7 @@
                         <p>&nbsp;</p>
 
                         <h2><p style="color: #151515;"> <label asp-for="BirthDate" class="control-label"> Fecha de nacimiento</label></h2></p>
-                        <input type="date" name="fecha" min="1970-01-01" required />
+                        <input type="date" asp-for="BirthDate" class="form-control" required />
                         <span asp-validation-for="BirthDate" class="text-danger"></span>
                     </div>
                 </div>
@@ -77,18 +77,15 @@
                     <span asp-validation-for="MaritalStatus" class="text-danger"></span>
 
                     <p>&nbsp;</p>
-                    <h2><label asp-for="CityBirthDate" class="control-label">Ciudad de nacimiento</label> </h2>
-                    <h2> <input type="text" placeholder="Ejemplo: Bogotá" width="100" name="CityBirthDate" required /></h2>
-                    <h3><span asp-validation-for="CityBirthDate" class="text-danger"></span></h3>
 
+                    <h2><label asp-for="CityBirthDate" class="control-label">Ciudad de nacimiento</label> </h2>
+                    <input type="text" asp-for="CityBirthDate"   class="form-control" required placeholder="Ejemplo: Bogotá" width="100"/>
+                    <span asp-validation-for="CityBirthDate" class="text-danger"></span>
+
+                    
 
                 </div>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
+                <p>&nbsp;</p>      <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>               <p>&nbsp;</p>
 
                 <center>
                     <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
