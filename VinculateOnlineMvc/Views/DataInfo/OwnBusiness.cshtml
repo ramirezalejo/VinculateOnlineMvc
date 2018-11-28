@@ -39,16 +39,20 @@
                 <p>&nbsp;</p>
                 <div style="width: 100%; text-align: center; float: right;">
                     <h2><label class="NameCompany">Nombre de la Empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Alpina: " class="form-control" required/>
+                    <input type="text" asp-for="NameCompany" placeholder="Ejemplo: Alpina: " class="form-control" required />
+                    <span asp-validation-for="NameCompany" class="text-danger"></span>
                     <p>&nbsp;</p>
                     <h2><label class="AddressCompany">Dirección de la Empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Calle 25 # 100 - 35: " class="form-control" required/>
+                    <input type="text" asp-for="AddressCompany" placeholder="Ejemplo: Calle 25 # 100 - 35: " class="form-control" required />
+                    <span asp-validation-for="AddressCompany" class="text-danger"></span>
                     <p>&nbsp;</p>
                     <h2><label class="ActivityEcoCompany">Actividad económica de tu empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Contrucción " class="form-control" required/>
+                    <input type="text" asp-for="ActivityEcoCompany" placeholder="Ejemplo: Contrucción " class="form-control" required />
+                    <span asp-validation-for="ActivityEcoCompany" class="text-danger"></span>
                     <p>&nbsp;</p>
                     <h2><label class="DateStarJob">Fecha de Constitución</label></h2>
-                    <input type="date" class="form-control" required/>
+                    <input type="date" asp-for="DateStarJob" class="form-control" required />
+                    <span asp-validation-for="DateStarJob" class="text-danger"></span>
                 </div>
 
 

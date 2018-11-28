@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,6 +10,8 @@ namespace VinculateOnlineMvc.Models
     public class Compliance
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int ComplianceID { get; set; }
         /*Conozco y acepto todas las condiciones informadas en la presente solicitud, así como el reglamento de Cuenta de Ahorro.*/
         public Boolean PrivacyAgrement  { get; set; }
 

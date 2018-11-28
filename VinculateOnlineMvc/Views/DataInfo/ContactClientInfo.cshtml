@@ -23,83 +23,91 @@
     }
 </style>
 <body>
-    
-        <div class="row">
-            <div class="col-md-4">
-                <form asp-action="ContactClientInfo">
-                    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ContactClientInfo">
+                <div asp-validation-summary="All" class="text-danger"></div>
 
 
-                    <div style="width: 15%; text-align: right">
-                        <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo_Sec"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
-                    </div>
+                <div style="width: 15%; text-align: right">
+                    <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo_Sec"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
+                </div>
 
-                    <div align="center">
-                        <h1 style="font-size:200%;"><i> Te queremos contactar,</i></h1>
-                        <h1 style="font-size:200%;"><i> Registra los siguientes datos:</i></h1>
-                    </div>
-
-                    <p>&nbsp;</p>
-                    <div style="width: 50%; text-align: center; float: left;">
-
-
-                        <h2><label asp-for="ResidenceCity" class="control-label">Ciudad donde vives</label></h2>
-                        <input type="text" asp-for="ResidenceCity" placeholder="Ejemplo: Bogotá" class="form-control" required />
-                        <span asp-validation-for="ResidenceCity" class="text-danger"></span>
-
-                        <p>&nbsp;</p>
-
-                        <h2><label asp-for="NumberPhone" class="control-label">Tu número de celular</label></h2>
-                        <input type="tel" placeholder="310-1234567" class="form-control" required />
-                        <span asp-validation-for="NumberPhone" class="text-danger"></span>
-
-                        <p>&nbsp;</p>
-
-                        <h2><label class="control-label"></label>Tu correo electronico: <img src="/images/email.png" /></h2>
-                        <input type="email" placeholder="abcdef@abec.com" class="form-control" required />
-                        <span asp-validation-for="email" class="text-danger"></span>
-
-                    </div>
-
-                    <div style="width: 50%; text-align: center; float: left;">
-
-
-
-                        <h2><label asp-for="Address" class="control-label">Tu dirección</label></h2>
-                        <input asp-for="Address" placeholder="Calle 37 # 16 - 25" class="form-control" required />
-                        <span asp-validation-for="Address" class="text-danger"></span>
-                        <p>&nbsp;</p>
-                        <h2><label asp-for="HomePhone" class="control-label"> Número de tu casa:</label> <img src="~/images/telefono_casa.jpg" /> </h2>
-                        <input type="tel" placeholder="1234567" class="form-control" />
-                        <span asp-validation-for="HomePhone" class="text-danger"></span>
-                        <p>&nbsp;</p>
-                        <h2><label asp-for="OficcePhone" class="control-label">Número de tu oficina</label><img src="~/images/telefono_casa.jpg" /> </h2>
-                        <input type="tel" placeholder="1234567" class="form-control" />
-                        <span asp-validation-for="OficcePhone" class="text-danger"></span>
-
-                    </div>
-                    <center>
-                        <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
-                            <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
-                        </button>
-                    </center>
-
-                </form>
+                <div align="center">
+                    <h1 style="font-size:200%;"><i> Te queremos contactar,</i></h1>
+                    <h1 style="font-size:200%;"><i> Registra los siguientes datos:</i></h1>
+                </div>
 
                 <p>&nbsp;</p>
+                <div style="width: 50%; text-align: center; float: left;">
 
-                <div>
-                    <center>
-                        <img src="/images/BannerInferior.png" width="2600" height="30">
-                        <div class="moduletable cSlider">
-                            <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
-                        </div>
-                    </center>
+
+                    <h2><label asp-for="ResidenceCity" class="control-label">Ciudad donde vives</label></h2>
+                    <input type="text" asp-for="ResidenceCity" placeholder="Ejemplo: Bogotá" class="form-control" required />
+                    <span asp-validation-for="ResidenceCity" class="text-danger"></span>
+
+                    <p>&nbsp;</p>
+
+                    <h2><label asp-for="NumberPhone" class="control-label">Tu número de celular</label></h2>
+                    <input type="number" asp-for="NumberPhone"  placeholder="310-1234567" class="form-control" required />
+                    <span asp-validation-for="NumberPhone" class="text-danger"></span>                  
+
+
+
+                    <p>&nbsp;</p>
+
+                    <h2><label asp-for="email" class="control-label">Tu correo electronico:</label> <img src="/images/email.png" /></h2>
+                    <input type="email" asp-for="email" placeholder="abcdef@abec.com" class="form-control" required />
+                    <span asp-validation-for="email" class="text-danger"></span>
 
                 </div>
+
+                <div style="width: 50%; text-align: center; float: left;">
+
+
+
+                    <h2><label asp-for="Address" class="control-label">Tu dirección</label></h2>
+                    <input asp-for="Address" placeholder="Calle 37 # 16 - 25" class="form-control" required />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                    <p>&nbsp;</p>
+                    <h2><label asp-for="HomePhone" class="control-label"> Número de tu casa:</label> <img src="~/images/telefono_casa.jpg" /> </h2>
+                    <input type="number"  asp-for="HomePhone" placeholder="1234567" class="form-control" />
+                    <span asp-validation-for="HomePhone" class="text-danger"></span>
+                    <p>&nbsp;</p>
+                    <h2><label asp-for="OficcePhone" class="control-label">Número de tu oficina</label><img src="~/images/telefono_casa.jpg" /> </h2>
+                    <input type="number" asp-for="OficcePhone" placeholder="1234567" class="form-control" />
+                    <span asp-validation-for="OficcePhone" class="text-danger"></span>
+
+                </div>
+                <center>
+                    <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
+                        <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
+                    </button>
+                </center>
+
+            </form>
+
+            <p>&nbsp;</p>
+
+            <div>
+                <center>
+                    <img src="/images/BannerInferior.png" width="2600" height="30">
+                    <div class="moduletable cSlider">
+                        <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                    </div>
+                </center>
+
             </div>
         </div>
+    </div>
 
 </body>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
 
 
