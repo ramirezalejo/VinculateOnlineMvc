@@ -8,8 +8,8 @@ namespace VinculateOnlineMvc.Models
 {
     public class YInternationalOperations
     {
-
         [Key]
+        public int BasicInfoClientID { get; set; }
         public string TransactionType { get; set; }
         public string Moneda { get; set; }
         public string CityIntOpe { get; set; }

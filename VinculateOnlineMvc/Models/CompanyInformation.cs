@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,6 +8,8 @@ namespace VinculateOnlineMvc.Models
 {
     public class CompanyInformation
     {
+        [Key]
+        public int BasicInfoClientID { get; set; }
         /*Nombre de la empresa donde trabaja(si es empleado obligatorio)*/
         public String NameCompany { get; set; }
 

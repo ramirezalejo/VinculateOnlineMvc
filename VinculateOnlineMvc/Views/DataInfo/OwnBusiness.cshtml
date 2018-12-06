@@ -39,19 +39,19 @@
                 <p>&nbsp;</p>
                 <div style="width: 100%; text-align: center; float: right;">
                     <h2><label class="NameCompany">Nombre de la Empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Alpina: " class="form-control" required/>
+                    <input type="text" placeholder="Ejemplo: Alpina: " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="AddressCompany">Dirección de la Empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Calle 25 # 100 - 35: " class="form-control" required/>
+                    <input type="text" placeholder="Ejemplo: Calle 25 # 100 - 35: " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="ActivityEcoCompany">Actividad económica de tu empresa</label></h2>
-                    <input type="text" placeholder="Ejemplo: Contrucción " class="form-control" required/>
+                    <input type="text" placeholder="Ejemplo: Contrucción " class="form-control" required />
                     <p>&nbsp;</p>
                     <h2><label class="DateStarJob">Fecha de Constitución</label></h2>
-                    <input type="date" class="form-control" required/>
+                    <input type="date" class="form-control" required />
                 </div>
 
-
+                @Html.HiddenFor(x => x.BasicInfoClientID);
                 <p>&nbsp;</p>                <p>&nbsp;</p>                 <p>&nbsp;</p>
                 <center>
                     <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">

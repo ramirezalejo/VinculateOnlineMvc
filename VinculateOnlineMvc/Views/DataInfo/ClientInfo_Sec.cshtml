@@ -79,12 +79,17 @@
                     <p>&nbsp;</p>
 
                     <h2><label asp-for="CityBirthDate" class="control-label">Ciudad de nacimiento</label> </h2>
-                    <input type="text" asp-for="CityBirthDate"   class="form-control" required placeholder="Ejemplo: Bogotá" width="100"/>
+                    <input type="text" asp-for="CityBirthDate" class="form-control" required placeholder="Ejemplo: Bogotá" width="100" />
                     <span asp-validation-for="CityBirthDate" class="text-danger"></span>
 
-                    
+
 
                 </div>
+                @Html.HiddenFor(x => x.BasicInfoClientID)
+                @Html.HiddenFor(x => x.FirstName)
+                @Html.HiddenFor(x => x.FirstLastName)
+                @Html.HiddenFor(x => x.SecondName)
+                @Html.HiddenFor(x => x.SecondLastName)
                 <p>&nbsp;</p>      <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>               <p>&nbsp;</p>
 
                 <center>

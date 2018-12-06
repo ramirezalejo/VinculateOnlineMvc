@@ -9,6 +9,7 @@ namespace VinculateOnlineMvc.Models
     public class Compliance
     {
         [Key]
+        public int BasicInfoClientID { get; set; }
         /*Conozco y acepto todas las condiciones informadas en la presente solicitud, así como el reglamento de Cuenta de Ahorro.*/
         public Boolean PrivacyAgrement  { get; set; }
 

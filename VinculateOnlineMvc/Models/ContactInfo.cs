@@ -9,7 +9,6 @@ namespace VinculateOnlineMvc.Models
     public class ContactInfo
     {
         [Key]
-
         public int BasicInfoClientID { get; set; }
         public string NumberPhone { get; set; }
         public string email { get; set; }

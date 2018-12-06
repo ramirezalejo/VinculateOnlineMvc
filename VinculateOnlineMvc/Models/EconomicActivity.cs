@@ -10,6 +10,7 @@ namespace VinculateOnlineMvc.Models
     public class EconomicActivity
     {
         [Key]
+        public int BasicInfoClientID { get; set; }
         /*Fuente de ingresos(Ocupación actual)*/
         public int EconomicActivityType { get; set; }
 

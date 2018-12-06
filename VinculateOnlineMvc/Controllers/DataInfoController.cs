@@ -164,197 +164,197 @@ namespace VinculateOnlineMvc.Controllers
 
         // GET: DataInfo/Document
 
-        public IActionResult Document(IdentityDocument id, string isSubmit)
+        public IActionResult Document(IdentityDocument model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.IdentityDocument.Add(id);
+                    db.IdentityDocument.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("ClientInfo");
+                return RedirectToAction("ClientInfo", new ClientBasicInfo { BasicInfoClientID = model.BasicInfoClientID });
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/ClientInformation
-        public IActionResult ClientInfo(ClientBasicInfo id, string isSubmit)
+        public IActionResult ClientInfo(ClientBasicInfo model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.ClientBasicInfo.Add(id);
+                    db.ClientBasicInfo.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("ClientInfo_Sec");
+                return RedirectToAction("ClientInfo_Sec", model);
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/ClientInformation
-        public IActionResult ClientInfo_Sec(ClientBasicInfo id, string isSubmit)
+        public IActionResult ClientInfo_Sec(ClientBasicInfo model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.ClientBasicInfo.Add(id);
+                    db.ClientBasicInfo.Update(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("ContactClientInfo");
+                return RedirectToAction("ContactClientInfo", new ContactInfo  { BasicInfoClientID = model.BasicInfoClientID });
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/ContactClientInfo
-        public IActionResult ContactClientInfo(ContactInfo id, string isSubmit)
+        public IActionResult ContactClientInfo(ContactInfo model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.ContactInfo.Add(id);
+                    db.ContactInfo.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("ClientEconomicActivity");
+                return RedirectToAction("ClientEconomicActivity", new EconomicActivity { BasicInfoClientID = model.BasicInfoClientID });
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/ClientEconomicActivity
-        public IActionResult ClientEconomicActivity()
+        public IActionResult ClientEconomicActivity(EconomicActivity model)
         {
-            return View();
+            return View(model);
         }
 
         // GET: DataInfo/EmployeesActivity
-        public IActionResult EmployeesActivity(EconomicActivity id, string isSubmit)
+        public IActionResult EmployeesActivity(EconomicActivity model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.EconomicActivity.Add(id);
+                    db.EconomicActivity.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("Income_Expense");
+                return RedirectToAction("Income_Expense", model);
             }
-            return View(id);
+            return View(model);
         }
         // GET: DataInfo/OwnBusiness
-        public IActionResult OwnBusiness(EconomicActivity id, string isSubmit)
+        public IActionResult OwnBusiness(EconomicActivity model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.EconomicActivity.Add(id);
+                    db.EconomicActivity.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("Income_Expense");
+                return RedirectToAction("Income_Expense", model);
             }
-            return View(id);
+            return View(model);
         }
         // GET: DataInfo/Income_Expense
-        public IActionResult Income_Expense(EconomicActivity id, string isSubmit)
+        public IActionResult Income_Expense(EconomicActivity model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.EconomicActivity.Add(id);
+                    db.EconomicActivity.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("Deposits");
+                return RedirectToAction("Deposits", model);
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/Deposits
-        public IActionResult Deposits(EconomicActivity id, string isSubmit)
+        public IActionResult Deposits(EconomicActivity model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.EconomicActivity.Add(id);
+                    db.EconomicActivity.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("Internationaloperations");
+                return RedirectToAction("Internationaloperations", model);
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/ComplianceInfo
-        public IActionResult ComplianceInfo(Compliance id, string isSubmit)
+        public IActionResult ComplianceInfo(Compliance model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.Compliance.Add(id);
+                    db.Compliance.Add(model);
                     db.SaveChanges();
                 }
                 return RedirectToAction("home");
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/Internationaloperations
-        public IActionResult Internationaloperations(EconomicActivity id, string isSubmit)
+        public IActionResult Internationaloperations(EconomicActivity model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.EconomicActivity.Add(id);
+                    db.EconomicActivity.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("YIntOperations");
+                return RedirectToAction("YIntOperations", new YInternationalOperations { BasicInfoClientID = model.BasicInfoClientID });
             }
-            return View(id);
+            return View(model);
         }
 
         // GET: DataInfo/InternationalAccounts
@@ -363,45 +363,45 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
         // GET: DataInfo/YIntOperations
-        public IActionResult YIntOperations(YInternationalOperations id, string isSubmit)
+        public IActionResult YIntOperations(YInternationalOperations model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.YInternationalOperations.Add(id);
+                    db.YInternationalOperations.Add(model);
                     db.SaveChanges();
                 }
                 return RedirectToAction("InternationalAccounts");
             }
-            return View(id);
+            return View(model);
         }
         // GET: DataInfo/AccountIntOpe
-        public IActionResult AccountIntOpe(YInternationalOperations id, string isSubmit)
+        public IActionResult AccountIntOpe(YInternationalOperations model, string isSubmit)
         {
             if (string.IsNullOrEmpty(isSubmit))
             {
-                return View();
+                return View(model);
             }
             if (ModelState.IsValid)
             {
                 using (var db = _context)
                 {
-                    db.YInternationalOperations.Add(id);
+                    db.YInternationalOperations.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("PayTaxCountry");
+                return RedirectToAction("PayTaxCountry", new EconomicActivity { BasicInfoClientID = model.BasicInfoClientID });
             }
-            return View(id);
+            return View(model);
         }
         // GET: DataInfo/PayTaxCountry
-        public IActionResult PayTaxCountry()
+        public IActionResult PayTaxCountry(EconomicActivity model)
         {
-            return View();
+            return View(model);
         }
         // GET: DataInfo/PublicInfo
         public IActionResult PublicInfo()
