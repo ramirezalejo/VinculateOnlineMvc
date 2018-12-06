@@ -333,7 +333,7 @@ namespace VinculateOnlineMvc.Controllers
                     db.Compliance.Add(model);
                     db.SaveChanges();
                 }
-                return RedirectToAction("home");
+                return RedirectToAction("FormAccount");
             }
             return View(model);
         }
@@ -409,8 +409,13 @@ namespace VinculateOnlineMvc.Controllers
             return View();
         }
 
-       
-        
+        // GET: DataInfo/FormAccount
+        public IActionResult FormAccount()
+        {
+            return View();
+        }
+
+
 
     }
 

@@ -22,65 +22,61 @@
         width: 50%;
     }
 </style>
+<body>
+    
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="ClientInfo_Sec">
+                    <div asp-validation-summary="All" class="text-danger"></div>
 
-<div class="custom">
-    <div class="row">
-        <div class="col-md-4">
-            <form asp-action="ClientInfo_Sec">
-                <div asp-validation-summary="All" class="text-danger"></div>
-
-                <div style="width: 15%; text-align: right">
-                    <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
-                </div>
+                    <div style="width: 15%; text-align: right">
+                        <p><a asp-area="" asp-controller="DataInfo" asp-action="ClientInfo"><img src="/images/ATRAS.png" alt="Banner Vinculate" width="50" height="50"></a> </p>
+                    </div>
 
 
 
-                <div align="center">
-                    <h1 style="font-size:250%;"><i> Otros datos importantes para Nosotros</i></h1>
-                    <p>&nbsp;</p>
-                    <div style="width: 50%; text-align: center; float: left;">
+                    <div align="center">
+                        <h1 style="font-size:250%;"><i> Otros datos importantes para Nosotros</i></h1>
+                        <p>&nbsp;</p>
+                        <div style="width: 50%; text-align: center; float: left;">
 
-                        <h2>
-                            <label>Género : </label>
-                            <select required>
+                           <h2> <label asp-for="Gender" class="control-label">Genero</label> </h2>
+                            <select name="Gender">
                                 <option>Masculino</option>
                                 <option>Femenino</option>
                                 <option selected></option>
                             </select>
-                        </h2>
+                            @*<input asp-for="Gender" class="form-control" required/>*@
+                            <span asp-validation-for="Gender" class="text-danger"></span>
 
-                        @*<input asp-for="Gender" class="form-control" required/>*@
-                        <span asp-validation-for="Gender" class="text-danger"></span>
-                        <p>&nbsp;</p>
+                            <p>&nbsp;</p>
 
-                        <h2><p style="color: #151515;"> <label asp-for="BirthDate" class="control-label"> Fecha de nacimiento</label></h2></p>
-                        <input type="date" asp-for="BirthDate" class="form-control" required />
-                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                            <h2><p style="color: #151515;"> <label asp-for="BirthDate" class="control-label"> Fecha de nacimiento</label></h2></p>
+                            <input type="date" asp-for="BirthDate" class="form-control" required />
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div style="width: 50%; text-align: center; float: left;">
+                    <div style="width: 50%; text-align: center; float: left;">
 
-                    <h2>
-                        <label>Estado Civil : </label>
-                        <select required>
+
+                        <h2> <label asp-for="MaritalStatus" class="control-label">Estado Civil</label> </h2>
+                        <select name="MaritalStatus">
                             <option>Casado(a)</option>
                             <option>Soltero(a)</option>
                             <option>Viudo(a)</option>
-                            <option>Divorsiado(a)/Separado(a)</option>
+                            <option>Divorsiado(a)</option>
                             <option>Union Libre</option>
                             <option selected></option>
                         </select>
-                    </h2>
+                        @*<input asp-for="MaritalStatus" class="form-control"/>*@
+                        <span asp-validation-for="MaritalStatus" class="text-danger"></span>
 
-                    @*<input asp-for="MaritalStatus" class="form-control"/>*@
-                    <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+                        <p>&nbsp;</p>
 
-                    <p>&nbsp;</p>
-
-                    <h2><label asp-for="CityBirthDate" class="control-label">Ciudad de nacimiento</label> </h2>
-                    <input type="text" asp-for="CityBirthDate" class="form-control" required placeholder="Ejemplo: Bogotá" width="100" />
-                    <span asp-validation-for="CityBirthDate" class="text-danger"></span>
+                        <h2><label asp-for="CityBirthDate" class="control-label">Ciudad de nacimiento</label> </h2>
+                        <input type="text" asp-for="CityBirthDate" class="form-control" required placeholder="Ejemplo: Bogotá" width="100" />
+                        <span asp-validation-for="CityBirthDate" class="text-danger"></span>
 
 
 
@@ -92,19 +88,25 @@
                 @Html.HiddenFor(x => x.SecondLastName)
                 <p>&nbsp;</p>      <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>             <p>&nbsp;</p>               <p>&nbsp;</p>
 
+                    <center>
+                        <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
+                            <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
+                        </button>
+                    </center>
+                </form>
+                <div>
                 <center>
-                    <button type="submit" name="isSubmit" value="true" style="border-style: none;background: none;">
-                        <img src="/images/Continuar.png" alt="Banner Vinculate" width="150" height="60" />
-                    </button>
+                    <img src="/images/BannerInferior.png" width="2600" height="30">
+                    <div class="moduletable cSlider">
+                        <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
+                    </div>
                 </center>
-            </form>
-            <center>
-                <img src="/images/BannerInferior.png" width="2600" height="30">
-                <div class="moduletable cSlider">
-                    <p>© 2015 Todos los derechos reservados. <br><strong><span class="red">Banco ProCredit Colombia</span></strong></p>
-                </div>
-            </center>
+
+            </div>
         </div>
     </div>
-</div>
+</body>
 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
